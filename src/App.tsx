@@ -1,24 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ButtonHomeWork } from './components/Button';
+import flag from '../src/components/Button/flag.png'
+import likeUp from '../src/components/Button/likeUp.png'
+import likeDown from '../src/components/Button/likeDown.png'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ButtonHomeWork 
+    objClassNames={
+      {classNameOne: 'BTNOne',
+       classNameTwo: 'BTNTwo',
+       classNameThree: 'BTNThree',
+       classNameFour: 'BTNFour',
+       classNameFive: 'BTNFive',
+       classNameSix: 'BTNSix',
+       classFlag: 'flag',
+      }
+    }
+
+    image={{
+      flag: flag,
+      likeUp: likeUp,
+      likeDown: likeDown,
+    }}
+
+    block={true}
+
+    textClick={() => console.log("Hello, React!")}
+
+    textObjectInBTN={
+      {textOne: 'Primary',
+       textTwo: 'Secondary', 
+       textThree: 'Secondary2', 
+       textFour: '  Button with icon'
+      }
+    }
+
+    />
+    {/* <Button text={() => console.log("text")} myName="Artem" obj="asd" qwe={false}/> */}
+    
     </div>
   );
 }
