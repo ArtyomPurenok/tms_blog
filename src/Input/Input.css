@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(192, 192, 192, 0.2);
+}
+
+.general {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.inpOne {
+    border-color: transparent;
+    width: 400px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+}
+.inpOne:hover {
+    border: 2px solid blueviolet;
+    border-radius: 3px;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
+.inpOne:focus {
+    border: 2px solid blueviolet;
+    border-radius: 0px;
+   }
+
+
+.inpTwo {
+    border: 2px solid silver;
+    width: 400px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+}
+.inpTwo:hover {
+    border: 2px solid DodgerBlue;
+    border-radius: 3px;
+    text-decoration: underline;
+    text-decoration-color: DodgerBlue;
+}
+.inpTwo:focus {
+    border: 2px solid DodgerBlue;
+    border-radius: 0px;
+   }
+
+
+.inpThree {
+    border-color: transparent;
+    width: 400px;
+    height: 40px;
+    outline: none;
+}
+.inpThree:hover {
+    border: 2px solid DodgerBlue;
+    border-radius: 3px;
+    text-decoration: underline;
+    text-decoration-color: DodgerBlue;
+}
+.inpThree:focus {
+    border: 2px solid DodgerBlue;
+    border-radius: 0px;
+}
+
+
+.inpFour {
+    border-color: transparent;
+    width: 400px;
+    height: 40px;
+    background-color: rgba(232, 232, 232, 1);
+    outline: none;
+}
+.inpFour:hover {
+    border: 2px solid DodgerBlue;
+    border-radius: 3px;
+    text-decoration: underline;
+    text-decoration-color: DodgerBlue;
+}
+.inpFour:focus {
+    border: 2px solid DodgerBlue;
+    border-radius: 0px;
+}
+
+
+.inpFive {
+    border-color: transparent;
+    width: 400px;
+    height: 40px;
+    outline: none;
+}
+.inpFive:hover {
+    border: 2px solid DodgerBlue;
+    border-radius: 3px;
+    text-decoration: underline;
+    text-decoration-color: DodgerBlue;
+}
+.inpFive:focus {
+    border: 2px solid DodgerBlue;
+    border-radius: 0px;
+}
+
+
+
+.titOne:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
+.titTwo:hover {
+    text-decoration: underline;
+    text-decoration-color: DodgerBlue;
+}
+
+
+.error {
+    color: red;
+    text-align: 15px;
+    font-weight: 900;
+}
