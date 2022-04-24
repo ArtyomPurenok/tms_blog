@@ -1,0 +1,53 @@
+
+.generalCardFour {
+    width: 450px;
+    margin: 10px 5px 100px 10px;
+}
+.CardFour {
+    display: flex;
+    justify-content: space-between;
+}
+.ButtonsCardFour {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CardFourAstronautPhoto {
+    width: 140px;
+    height: 140px;
+    border: 2px solid transparent;
+}
+.CardFourAstronautPhoto:hover {
+    border: 2px solid DodgerBlue;
+}
+
+.TextBox {
+    width: 300px;
+}
+
+.CardFourTextOne {
+    color: rgb(155, 155, 155);
+    font-size: 11px;
+    margin: 10px 12px;
+}
+
+.CardFourTextTwo {
+    font-size: 15px;
+    margin: 10px 5px 10px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.CardFourTextTwo:hover {
+    white-space: normal;
+   }
+
+.CardFourTextTwo:hover, .CardFourTextOne:hover {
+    text-decoration: 2px underline;
+    text-decoration-color: DodgerBlue;
+}
+
+.CardFourline {
+    margin-top: 50px;
+}

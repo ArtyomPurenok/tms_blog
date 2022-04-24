@@ -1,0 +1,49 @@
+.ButtonlikeUp {
+
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+    margin: 5px 5px 0px 0px;
+    font-size: 16px;
+}
+.ImglikeUp {
+    width: 18px;
+    margin-right: 5px;
+}
+
+
+.ButtonlikeDown {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+    margin: 5px 5px 0px 0px;
+}
+.ImglikeDown {
+    width: 18px;
+}
+
+
+.flag {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+    margin: 5px 5px 0px 0px;
+}
+.ImgFlag {
+    width: 16px;
+}
+
+
+.Dots {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+
+    padding: 5px 5px 0px 0px;
+}
+.ImgDots {
+    width: 16px;
+}
