@@ -23,10 +23,10 @@ interface IClassesCardOne {
 type el = {
     classesCardOne: IClassesCardOne
     img: IImages
+
 }
 
 export const AstronautСardOne = ({classesCardOne, img}: el) => {
-
 
 
     return <div>
