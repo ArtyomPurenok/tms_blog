@@ -1,0 +1,38 @@
+.generaTwolColownTwo {
+
+    width: 205px;
+    margin: 100px 10px 20px 200px;
+}
+
+.AstronautImageSecond {
+    height: 140px;
+    border: 2px solid transparent;
+}
+.AstronautImageSecond:hover {
+    border: 2px solid DodgerBlue;
+}
+
+.ButtonColownTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.CardTwoColTwoTxt1 {
+    font-size: 9px;
+}
+.CardTwoColTwoTxt1:hover, .CardTwoColTwoTxt2:hover {
+    text-decoration: 2px underline;
+    text-decoration-color: DodgerBlue;
+}
+
+.CardTwoColTwoTxt2 {
+    font-size: 11px;
+}
+.CardTwoColTwoTxt2:hover {
+    color: blue;
+}
+
+.CardTwoColTwoline {
+    margin-top: 45px;
+}

@@ -1,0 +1,40 @@
+.generalFiveColownTwo {
+    position: relative;
+    width: 205px;
+    height: 360px;
+    margin: 134px 10px 20px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.AstronautImageSecond {
+    height: 140px;
+    border: 2px solid transparent;
+}
+.AstronautImageSecond:hover {
+    border: 2px solid DodgerBlue;
+}
+
+.ButtonColownTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.CardFiveColTwoTxt1 {
+    font-size: 9px;
+}
+
+.CardFiveColTwoTxt2 {
+    font-size: 11px;
+}
+.CardFiveColTwoTxt1:hover, .CardFiveColTwoTxt2:hover {
+    text-decoration: 2px underline;
+    text-decoration-color: DodgerBlue;
+}
+
+
+.CardFiveColTwoline {
+    margin-top: 45px;
+}

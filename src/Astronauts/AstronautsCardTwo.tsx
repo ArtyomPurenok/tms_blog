@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import './AstronautsCardTwo.css'
+import React from 'react';
+import '../Astronauts/AstronautsCSS/AstronautsCardTwo.css'
 import { ButtonLikeUp } from '../Components/Button'
 import { ButtonLikeDown } from '../Components/Button'
 import { Flag } from '../Components/Button'
@@ -35,7 +36,7 @@ export const AstronautСardTwo = ({classesCardTwo, img}: el) => {
 
     <div>
       <p className={classesCardTwo.textOne}>April 20, 2021</p>
-      <h3 className={classesCardTwo.textTwo}>Astronauts prep for new<br/> solar arrays on nearly<br/> seven-hour spacewalk</h3>
+      <h1 className={classesCardTwo.textTwo}>Astronauts prep for new<br/> solar arrays on nearly<br/> seven-hour spacewalk</h1>
       <p className={classesCardTwo.textOne}>Astronauts Kayla Barron and Raja Chari floated out of the<br/> International Space Station airlock for a spacewalk<br/> Tuesday, installing brackets and struts to support new<br/> solar arrays to upgrade the research lab's power system on<br/> the same day that crewmate Mark Vande Hei marked his<br/> 341st day in orbit, a U.S. record for a single spaceflight.</p>
     </div>
 

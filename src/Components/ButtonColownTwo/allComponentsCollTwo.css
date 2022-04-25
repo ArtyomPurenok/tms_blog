@@ -1,0 +1,54 @@
+.ButtonlikeUpCollTwo {
+    width: 35px;
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+    margin: 0px;
+    font-size: 14px;
+    padding-left: 0px;
+    white-space: nowrap;
+    border-color: transparent;
+}
+.ImglikeUpCollTwo {
+    width: 14px;
+    margin-right: 5px;
+}
+
+
+.ButtonlikeDownCollTwo {
+    width: 35px;
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+    margin: 5px 5px 0px 5px;
+    border-color: transparent;
+}
+.ImglikeDownCollTwo {
+    width: 14px;
+}
+
+
+.flagCollTwo {
+    width: 35px;
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+    margin: 5px 5px 0px 0px;
+    border-color: transparent;
+}
+.ImgFlagCollTwo {
+    width: 12px;
+}
+
+
+.DotsCollTwo {
+    width: 35px;
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+    border-color: transparent;
+    padding: 5px 5px 0px 0px;
+}
+.ImgDotsCollTwo {
+    width: 12px;
+}

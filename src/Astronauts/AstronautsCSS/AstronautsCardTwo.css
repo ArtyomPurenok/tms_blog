@@ -1,0 +1,49 @@
+
+.generalCardTwo {
+    width: 450px;
+    margin: 10px 5px;
+    margin: 10px 5px 100px 10px;
+}
+.CardTwo {
+    display: flex;
+    justify-content: space-between;
+}
+.ButtonsCardTwo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CardTwoAstronautPhoto {
+    width: 140px;
+    height: 140px;
+    border: 2px solid transparent;
+}
+.CardTwoAstronautPhoto:hover {
+    border: 2px solid DodgerBlue;
+}
+
+.CardTwoTextOne {
+    color: rgb(155, 155, 155);
+    font-size: 11px;
+    margin: 10px 12px;
+}
+.CardTwoTextOne:hover, .CardTwoTextTwo:hover {
+    text-decoration: 2px underline;
+    text-decoration-color: DodgerBlue;
+}
+
+
+.CardTwoTextTwo {
+    font-size: 19px;
+    margin: 10px 5px 10px 10px;
+}
+.CardTwoTextTwo:hover {
+    color: blue;
+}
+
+.CardTwoline {
+    margin-top: 50px;
+}
+
+

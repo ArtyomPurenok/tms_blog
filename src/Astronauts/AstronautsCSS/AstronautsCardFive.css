@@ -1,0 +1,49 @@
+
+.generalCardFive {
+    width: 450px;
+    margin: 10px 5px 100px 10px;
+}
+.CardFive {
+    display: flex;
+    justify-content: space-between;
+}
+.ButtonsCardFive {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CardFiveAstronautPhoto {
+    width: 140px;
+    height: 140px;
+    border: 2px solid transparent;
+}
+.CardFiveAstronautPhoto:hover {
+    border: 2px solid DodgerBlue;
+}
+
+.TextBoxCardFive {
+    width: 310px;
+    height: 260px;
+}
+
+.CardFiveTextOne {
+    color: rgb(155, 155, 155);
+    font-size: 11px;
+    margin: 10px 12px;
+}
+
+.CardFiveTextTwo {
+    font-size: 19px;
+    margin: 10px 5px 10px 10px;
+}
+
+
+.CardFiveTextTwo:hover, .CardFiveTextOne:hover {
+    text-decoration: 2px underline;
+    text-decoration-color: DodgerBlue;
+}
+
+.CardFiveline {
+    margin-top: 50px;
+}

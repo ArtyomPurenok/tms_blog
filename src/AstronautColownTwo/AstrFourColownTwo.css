@@ -1,0 +1,42 @@
+.generalFourColownTwo {
+
+    width: 205px;
+    margin: 90px 10px 20px 200px;
+}
+
+.AstronautImageSecond {
+    height: 140px;
+    border: 2px solid transparent;
+}
+.AstronautImageSecond:hover {
+    border: 2px solid DodgerBlue;
+}
+
+.ButtonColownTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.CardFourColTwoTxt1 {
+    font-size: 9px;
+}
+
+.CardFourColTwoTxt2 {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.CardFourColTwoTxt2:hover {
+    white-space: normal;
+}
+.CardFourColTwoTxt1:hover, .CardFourColTwoTxt2:hover {
+    text-decoration: 2px underline;
+    text-decoration-color: DodgerBlue;
+}
+
+
+.CardFourColTwoline {
+    margin-top: 45px;
+}
