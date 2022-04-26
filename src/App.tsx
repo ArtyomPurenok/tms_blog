@@ -13,8 +13,11 @@ import { AstrThreeColownTwo } from './AstronautColownTwo'
 import { AstrFourColownTwo } from './AstronautColownTwo'
 import { AstrFiveColownTwo } from './AstronautColownTwo'
 
-import AstronautImageFirst from '../src/Components/images/AstronautImageFirst.svg'
-import AstronautImageSecond from '../src/Components/images/AstronautImageSecond.svg'
+import { CardColownThree } from './AstronautColownThree'
+
+import AstronautIconOne from '../src/Components/images/AstronautIconOne.svg'
+import AstronautIconTwo from '../src/Components/images/AstronautIconTwo.svg'
+import AstronautIconThree from '../src/Components/images/AstronautIconThree.svg'
 
 import LikeUp from '../src/Components/images/LikeUp.png'
 import LikeDown from '../src/Components/images/LikeDown.png'
@@ -34,7 +37,7 @@ function App() {
       }}
 
        img={{
-        AstronautPhotoOne: AstronautImageFirst,
+        AstronautPhotoOne: AstronautIconOne,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -50,7 +53,7 @@ function App() {
       }}
 
       img={{
-        AstronautPhotoOne: AstronautImageFirst,
+        AstronautPhotoOne: AstronautIconOne,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -67,7 +70,7 @@ function App() {
       }}
 
       img={{
-        AstronautPhotoOne: AstronautImageFirst,
+        AstronautPhotoOne: AstronautIconOne,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -83,7 +86,7 @@ function App() {
       }}
 
       img={{
-        AstronautPhotoOne: AstronautImageFirst,
+        AstronautPhotoOne: AstronautIconOne,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -99,7 +102,7 @@ function App() {
       }}
 
       img={{
-        AstronautPhotoOne: AstronautImageFirst,
+        AstronautPhotoOne: AstronautIconOne,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -111,7 +114,7 @@ function App() {
       <AstrOneColownTwo
 
         img={{
-        AstronautPhotoTwo: AstronautImageSecond,
+        AstronautPhotoTwo: AstronautIconTwo,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -122,7 +125,7 @@ function App() {
       <AstrTwoColownTwo
 
         img={{
-        AstronautPhotoTwo: AstronautImageSecond,
+        AstronautPhotoTwo: AstronautIconTwo,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -133,7 +136,7 @@ function App() {
       <AstrThreeColownTwo
 
         img={{
-        AstronautPhotoTwo: AstronautImageSecond,
+        AstronautPhotoTwo: AstronautIconTwo,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -144,7 +147,7 @@ function App() {
       <AstrFourColownTwo
 
         img={{
-        AstronautPhotoTwo: AstronautImageSecond,
+        AstronautPhotoTwo: AstronautIconTwo,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
@@ -155,14 +158,100 @@ function App() {
       <AstrFiveColownTwo
 
         img={{
-        AstronautPhotoTwo: AstronautImageSecond,
+        AstronautPhotoTwo: AstronautIconTwo,
         LikeUp: LikeUp,
         LikeDown: LikeDown,
         Flag: Flag,
         Dots: Dots,
         }}
       /> 
+
                </div>
+
+
+      <div className='ColownTwo'>
+
+      <CardColownThree
+      text="Astronauts prep for new solar arrays on nearly seven-hour spacewalk"
+      
+      classes={{
+        classP: 'TxtGenCardOneColownThree'
+      }}
+
+      Icons={{
+        AstronautPhotoTwo: AstronautIconThree,
+        LikeUp: LikeUp,
+        LikeDown: LikeDown,
+        Flag: Flag,
+        Dots: Dots,
+        }}
+      />
+
+      <CardColownThree
+      text="Astronauts prep for new solar arrays on nearly seven-hour spacewalk"
+
+      classes={{
+        classP: 'TxtGenCardTwoColownThree'
+      }}
+
+      Icons={{
+        AstronautPhotoTwo: AstronautIconThree,
+        LikeUp: LikeUp,
+        LikeDown: LikeDown,
+        Flag: Flag,
+        Dots: Dots,
+        }}
+      />
+
+      <CardColownThree
+      text="Astronauts prep for new solar arrays on nearly seven-hour spacewalk"
+
+      classes={{
+        classP: 'TxtGenCardThreeColownThree'
+      }}
+
+      Icons={{
+        AstronautPhotoTwo: AstronautIconThree,
+        LikeUp: LikeUp,
+        LikeDown: LikeDown,
+        Flag: Flag,
+        Dots: Dots,
+        }}
+      />
+
+      <CardColownThree
+      text="Astronauts prep for new solar arrays on nearly seven-hour spacewalk"
+
+      classes={{
+        classP: 'TxtGenCardFourColownThree'
+      }}
+
+      Icons={{
+        AstronautPhotoTwo: AstronautIconThree,
+        LikeUp: LikeUp,
+        LikeDown: LikeDown,
+        Flag: Flag,
+        Dots: Dots,
+        }}
+      />
+
+      <CardColownThree
+      text="Astronauts prep for new solar arrays on nearly seven-hour spacewalk"
+
+      classes={{
+        classP: 'TxtGenCardFiveColownThree'
+      }}
+
+      Icons={{
+        AstronautPhotoTwo: AstronautIconThree,
+        LikeUp: LikeUp,
+        LikeDown: LikeDown,
+        Flag: Flag,
+        Dots: Dots,
+        }}
+      />
+
+      </div>
 
 
 

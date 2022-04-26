@@ -1,0 +1,1 @@
+export {CardColownThree} from './AstrColownThree'

@@ -1,0 +1,59 @@
+.generalBoxColownThree {
+    width: 300px;
+    margin: 10px 0px 20px 250px;
+}
+
+.ButtonColownThree {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.CardThreeDisplay {
+    display: flex;
+}
+
+.TxtDataColownThree {
+    font-size: 10px;
+}
+
+.TxtGenCardOneColownThree {
+    font-size: 14px;
+}
+
+.TxtGenCardTwoColownThree {
+    font-size: 14px;
+}
+.TxtGenCardTwoColownThree:hover {
+    font-size: 14px;
+    color: blue;
+}
+
+.TxtGenCardThreeColownThree {
+    font-size: 14px;
+}
+
+.TxtGenCardFourColownThree {
+    font-size: 14px;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+.TxtGenCardFourColownThree:hover {
+    white-space: normal;
+}
+
+.TxtGenCardFiveColownThree {
+    font-size: 14px;
+}
+
+.TxtDataColownThree:hover, .TxtGenCardOneColownThree:hover, .TxtGenCardTwoColownThree:hover, .TxtGenCardThreeColownThree:hover, .TxtGenCardFourColownThree:hover, .TxtGenCardFiveColownThree:hover {
+    text-decoration: 2px underline;
+    text-decoration-color: DodgerBlue;
+}
+
+.ColownThreeDownLine {
+    margin-bottom: 230px;
+}
