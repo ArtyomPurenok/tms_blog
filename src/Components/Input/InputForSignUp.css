@@ -1,0 +1,30 @@
+.SignUpInputName, .SignUpInputEmail, .SignUpInputPassword, .SignUpInputConfirmPass {
+    width: 392px;
+    height: 30px;
+    border-color: transparent;
+    border-radius: 2px;
+    outline: none;
+}
+.SignUpInputName:hover, .SignUpInputEmail:hover, .SignUpInputPassword:hover, .SignUpInputConfirmPass:hover {
+    border-color: rgb(34, 170, 255);
+}
+.SignUpInputName:focus, .SignUpInputEmail:focus, .SignUpInputPassword:focus, .SignUpInputConfirmPass:focus {
+    border-color: rgb(34, 170, 255);
+}
+
+.SignUpInput {
+    width: 400px;
+    margin: 10px auto;
+}
+
+.SignUpInput p {
+    font-size: 12px;
+    margin: 30px auto 3px auto;
+    font-weight: 700;
+    color: rgb(49, 48, 55);
+}
+
+.SignUpInput input {
+    font-size: 12px;
+}
+

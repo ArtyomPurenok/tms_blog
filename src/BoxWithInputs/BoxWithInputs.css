@@ -1,0 +1,11 @@
+.SignUpBelowButton {
+    text-align: center;
+    font-size: 12px;
+    margin: 15px auto 30px auto;
+    color: rgb(141, 142, 151);
+}
+
+.SignUpBelowButton span {
+    color: rgba(34, 49, 170, 1);
+    font-weight: 600;
+}

@@ -1,0 +1,1 @@
+export {InputForSignUp} from './InputForSignUp'

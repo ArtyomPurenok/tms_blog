@@ -1,0 +1,1 @@
+export {MainJSX} from './MainAssembly'

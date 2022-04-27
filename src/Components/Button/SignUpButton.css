@@ -1,0 +1,12 @@
+.SignUpButtonDiv {
+    width: 400px;
+    margin: 40px auto 0 auto;
+}
+
+.SignUpButton {
+    width: 400px;
+    height: 40px;
+    background-color: rgba(34, 49, 170, 1);
+    color: white;
+    border-color: rgba(34, 49, 170, 1);
+}
