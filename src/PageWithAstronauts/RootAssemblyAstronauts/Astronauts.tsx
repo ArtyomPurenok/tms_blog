@@ -8,8 +8,16 @@ import {LargePost} from '../Posts'
 import {AveragePorst} from '../Posts'
 import {LittlePost} from '../Posts'
 
+interface IPostsFromServer {
+    id: number
+    p: string
+    h1: string
+    article?: string
+    img: string
+    type: string
+}
 
-const postsFromServer = [
+const postsFromServer: IPostsFromServer[] = [
     {
         id: 1,
         p: 'April 20, 2021',
@@ -100,14 +108,39 @@ const postsFromServer = [
 
 export const AstranautRootFile = (() => {
 
-const BigPosts = postsFromServer.map((el) => {
-    if(el.id === 1) {
-        return <LargePost p={el.p} h1={el.h1} img={el.img} article={el.article}/>
-    }
-    if(el.id === 2) {
-       return <AveragePorst p={el.p} h1={el.h1} img={el.img}/>
-    }
+    const [counts, setCounts] = useState([])
+
+    // useEffect(() => {
+    //     setTimeout(() => { setCounts(postsFromServer); }, 1000);
+    //   }, []);
+
+const functionOne = ((element: any) => {
+    return element.map((el: any) => {
+        if(el.id === 1) {
+            return <LargePost p={el.p} h1={el.h1} img={el.img} article={el.article}/>
+        }
+        if(el.id === 2) {
+           return <AveragePorst p={el.p} h1={el.h1} img={el.img}/>
+        }
+    })
+
 })
+function asd() {
+    setCounts(counts)
+}
+
+
+
+
+const BigPosts = functionOne(postsFromServer)
+// postsFromServer.map((el) => {
+//     if(el.id === 1) {
+//         return <LargePost p={el.p} h1={el.h1} img={el.img} article={el.article}/>
+//     }
+//     if(el.id === 2) {
+//        return <AveragePorst p={el.p} h1={el.h1} img={el.img}/>
+//     }
+// })
 
 const SmallPosts = postsFromServer.map((el) => {
     if(el.id === 3) {
