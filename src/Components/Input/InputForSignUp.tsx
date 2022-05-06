@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import './InputForSignUp.css'
 
 type SignUpInputProps = {
@@ -20,11 +20,14 @@ export const InputForSignUp = ({EmailVerification, LoginVerification, PasswordIn
     // const asd = (el: any) => {
     //     setValue(el.target.value)  
     // }
+    const inputRef = useRef<HTMLInputElement | null>(null)
+    inputRef.current?.focus()
+
 
 
 return <div className='SignUpInput'>
         <p>{SignUpTxtNameForInput}</p>
-        <input onChange={EmailVerification || LoginVerification || PasswordInputOne || PasswordInputTwo}    className={SignUpInpClass} style={{borderColor: BorderColorEmailInput || BorderColorUserInput || BorderColorInputPasswords}} type={SignUpInputType} placeholder={SignUpInputPlaceholder}/>
+        <input ref={inputRef}  onChange={EmailVerification || LoginVerification || PasswordInputOne || PasswordInputTwo}    className={SignUpInpClass} style={{borderColor: BorderColorEmailInput || BorderColorUserInput || BorderColorInputPasswords}} type={SignUpInputType} placeholder={SignUpInputPlaceholder}/>
 
     </div>
 }
