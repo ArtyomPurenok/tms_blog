@@ -1,3 +1,4 @@
+import React from 'react'
 import { getEventListeners } from 'events'
 import { useState } from 'react'
 import './Input.css'
