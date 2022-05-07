@@ -1,0 +1,14 @@
+.LikeBox {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.LikeBoxLeft {
+    display: flex;
+}
+
+.LikeBoxRight {
+    display: flex;
+}
