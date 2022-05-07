@@ -1,10 +1,12 @@
 import React from 'react';
-import {AstranautRootFile} from './PageWithAstronauts/RootAssemblyAstronauts'
+
+
 
 function App() {
   return (
     <div className="App">
-     <AstranautRootFile/>
+      {/* <Card/>
+      <LikeBox/> */}
     </div>
   );
 }

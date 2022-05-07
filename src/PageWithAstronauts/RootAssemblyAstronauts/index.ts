@@ -1,1 +1,0 @@
-export {AstranautRootFile} from './Astronauts'
