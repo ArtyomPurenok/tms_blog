@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(229, 229, 229);
+}
+
+.SignIn {
+    width: 1680px;
+}
+
+.SignInDivTxt {
+    margin: 60px auto 60px 340px;
+    color: rgba(49, 48, 55, 1);
+}
+
+.SignInComeHome {
+    font-size: 12px;
+}
+
+.SignInTitle {
+    font-size: 40px;
+}

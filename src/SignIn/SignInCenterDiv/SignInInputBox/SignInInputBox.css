@@ -1,0 +1,28 @@
+.SignInInputBox {
+    width: 350px;
+    margin: 0 auto;
+    color: rgba(49, 48, 55, 1);
+}
+
+.signInInputEmailDiv, .signInInputPasswordDiv {
+    padding: 15px 0px 0px 0px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.signInInputEmail, .signInInpuPassword {
+    width: 340px;
+    height: 33px;
+    font-size: 14px;
+    border-color: transparent;
+}
+
+.SignInInputBoxForPas {
+    width: 150px;
+    height: 18px;
+    font-size: 12px;
+}
+
+.SignInInputBoxForPas:hover {
+    color: blue
+}
