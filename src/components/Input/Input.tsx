@@ -6,11 +6,14 @@ type InputProps = {
     InputType?: string
     InputPlaceholder?: string
     InputOnChange?: any
+    InputName?: string
+    InputGeneralDiv?: string
 }
 
-export const Input = (({InputClass, InputType, InputPlaceholder, InputOnChange}: InputProps) => {
+export const Input = (({InputClass, InputType, InputPlaceholder, InputOnChange, InputName, InputGeneralDiv}: InputProps) => {
 
-    return <div>
+    return <div className={InputGeneralDiv}>
+        {InputName && <p className='InputP'>{InputName}</p>}
         <input className={InputClass} onChange={InputOnChange} type={InputType} placeholder={InputPlaceholder}/>
     </div>
 })
