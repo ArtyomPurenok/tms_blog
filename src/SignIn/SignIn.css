@@ -2,19 +2,19 @@ body {
     background-color: rgb(229, 229, 229);
 }
 
-.SignIn {
+.signIn {
     width: 1680px;
 }
 
-.SignInDivTxt {
+.signIn-Div-Txt {
     margin: 60px auto 60px 340px;
     color: rgba(49, 48, 55, 1);
 }
 
-.SignInComeHome {
+.signIn-ComeHome {
     font-size: 12px;
 }
 
-.SignInTitle {
+.signIn-Title {
     font-size: 40px;
 }

@@ -4,9 +4,9 @@ import './SignInInputBox.css';
 import {Input} from '../../../components/Input'
 
 export const SignInInputBox = (() => {
-    return <div className="SignInInputBox">
-         <Input InputName='Email' InputPlaceholder='Your email' InputClass='signInInputEmail' InputGeneralDiv='signInInputEmailDiv'/>
-         <Input InputType='password' InputName='Password' InputPlaceholder='Your password' InputClass='signInInpuPassword' InputGeneralDiv='signInInputPasswordDiv'/>
-         <p className="SignInInputBoxForPas">Forgot password?</p>
+    return <div className="signIn-Input-Box">
+         <Input inputName='Email' inputPlaceholder='Your email' inputClass='signIn-Input-Email' inputGeneralDiv='signIn-Input-Email-Div'/>
+         <Input inputType='password' inputName='Password' inputPlaceholder='Your password' inputClass='signIn-Input-Password' inputGeneralDiv='signIn-Input-Password-Div'/>
+         <p className="signIn-Input-Box-ForPas">Forgot password?</p>
     </div>
 })

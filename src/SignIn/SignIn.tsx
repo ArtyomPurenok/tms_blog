@@ -9,12 +9,12 @@ import {Header} from '../Header'
 import {Footer} from '../Footer'
 
 export const SignIn = (() => {
-    return <div className="SignIn">
+    return <div className="signIn">
 
         <Header/>
-        <div className="SignInDivTxt">
-            <p className="SignInComeHome">Back to home</p>
-            <h1 className="SignInTitle">Sign In</h1>
+        <div className="signIn-Div-Txt">
+            <p className="signIn-ComeHome">Back to home</p>
+            <h1 className="signIn-Title">Sign In</h1>
         </div>
         <SignInCenterDiv/>
         <Footer/>
