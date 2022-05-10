@@ -13,14 +13,14 @@ export const LikeBox = (() => {
     const FunLikeNumber = (() => setLikeNumber(likeNumber + 1))
 
 
-    return <div className='LikeBox'>
+    return <div className='like-Box'>
 
-        <div className='LikeBoxLeft'>
-            <LikeUp FunctionLikeNumber={FunLikeNumber}  likeNumber={likeNumber}/>
+        <div className='like-Box-Left'>
+            <LikeUp functionLikeNumber={FunLikeNumber}  likeNumber={likeNumber}/>
             <LikeDown/>
         </div>
 
-        <div className='LikeBoxRight'>
+        <div className='like-Box-Right'>
             <Bookmark/>
             <DotsThree/>
         </div>        

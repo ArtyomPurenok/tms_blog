@@ -2,16 +2,16 @@ import React from 'react';
 
 type buttonProps = {
     BtnClass?: string
-    FunctionLikeNumber?: any
+    functionLikeNumber?: any
     BtnIcon?: any
     likeNumber?: number
     BtnTxt?: string
 }
 
-export const Button = (({BtnClass, FunctionLikeNumber, BtnIcon, likeNumber, BtnTxt}: buttonProps) => {
+export const Button = (({BtnClass, functionLikeNumber, BtnIcon, likeNumber, BtnTxt}: buttonProps) => {
     return <div>
         <button 
-        onClick={FunctionLikeNumber}
+        onClick={functionLikeNumber}
         className={BtnClass}
         >
             {BtnTxt}

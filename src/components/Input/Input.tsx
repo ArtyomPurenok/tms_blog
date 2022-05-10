@@ -13,7 +13,7 @@ type InputProps = {
 export const Input = (({InputClass, InputType, InputPlaceholder, InputOnChange, InputName, InputGeneralDiv}: InputProps) => {
 
     return <div className={InputGeneralDiv}>
-        {InputName && <p className='InputP'>{InputName}</p>}
+        {InputName && <p className='input-P'>{InputName}</p>}
         <input className={InputClass} onChange={InputOnChange} type={InputType} placeholder={InputPlaceholder}/>
     </div>
 })
