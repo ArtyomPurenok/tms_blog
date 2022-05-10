@@ -4,11 +4,11 @@ import './Footer.css';
 
 export const Footer =(() => {
     return <div className='footer'>
-        <hr className='footerHr'/>
+        <hr className='footer-Hr'/>
 
-        <div className='footerDivsTxt'>
-            <div><p className='footerTxt'>©2022 Blogfolio</p></div>
-            <div><p className='footerTxt'>All rights reserved</p></div>
+        <div className='footer-Divs-Txt'>
+            <div><p className='footer-Txt'>©2022 Blogfolio</p></div>
+            <div><p className='footer-Txt'>All rights reserved</p></div>
         </div>
     </div>
 })

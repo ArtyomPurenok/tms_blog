@@ -4,18 +4,18 @@
     margin: 60px auto;
 }
 
-.footerHr {
+.footer-Hr {
     height: 1px;
     margin: 0px;
     background-color: rgba(218, 218, 218, 1);
 }
 
-.footerDivsTxt {
+.footer-Divs-Txt {
     display: flex;
     justify-content: space-between;
 }
 
-.footerTxt {
+.footer-Txt {
     color: rgba(141, 142, 151, 1);
     font-size: 15px;
 }

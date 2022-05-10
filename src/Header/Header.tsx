@@ -7,24 +7,24 @@ import { ReactComponent as MenuIcon } from '../components/Icons/MenuIcon.svg'
 import { ReactComponent as SearchIcon } from '../components/Icons/Search.svg'
 
 type HeaderProps = {
-    HeaderUser?: string
-    HeaderUserIcon?: string
+    headerUser?: string
+    headerUserIcon?: string
 }
 
-export const Header = (({HeaderUser, HeaderUserIcon}: HeaderProps) => {
+export const Header = (({headerUser, headerUserIcon}: HeaderProps) => {
     
 
     return <div className='header'>
-        <div className='headerLeft'>
-            <Button BtnClass={'HeaderBtnBurger'} BtnIcon={MenuIcon}/>
-            <hr className='HeaderHr'/>
+        <div className='header-Left'>
+            <Button btnClass={'header-Btn-Burger'} BtnIcon={MenuIcon}/>
+            <hr className='header-Hr'/>
         </div>
-        <div className='headerRight'>
-            <hr className='HeaderHr'/>
-            <Button BtnClass={'HeaderBtnSeach'} BtnIcon={SearchIcon}/>
-            <hr className='HeaderHr'/>
-            {HeaderUser && <Button BtnClass={'HeaderUser'} BtnTxt={HeaderUser}/>}
-            {HeaderUserIcon && <Button BtnClass={'HeaderUserIcon'} BtnIcon={HeaderUserIcon}/>}
+        <div className='header-Right'>
+            <hr className='header-Hr'/>
+            <Button btnClass={'header-Btn-Seach'} BtnIcon={SearchIcon}/>
+            <hr className='header-Hr'/>
+            {headerUser && <Button btnClass={'header-User'} btnTxt={headerUser}/>}
+            {headerUserIcon && <Button btnClass={'header-User-Icon'} BtnIcon={headerUserIcon}/>}
             
         </div>
 
