@@ -1,0 +1,1 @@
+export {AstronautsPageMain} from './AstronautsPageMain'

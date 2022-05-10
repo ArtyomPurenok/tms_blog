@@ -1,0 +1,60 @@
+.astronautsCenterPosts {
+    width: 700px;
+    background-color: greenyellow;
+    margin: 50px auto 0px 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+
+.bigPostTxt {
+    margin: 0px 15px 20px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bigPostTxt p {
+    font-size: 16px;
+}
+
+.cardBigPost img{
+    width: 250px;
+    height: 210px;
+}
+
+.cardBigPost {
+
+    width: 700px;
+    height: 350px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.cardmiddlePosts {
+    width: 340px;
+    height: 350px;
+    margin: 0px;
+}
+
+.middlePostsTxt {
+    font-size: 10px;
+}
+.middlePostsTxt h1 {
+    font-size: 19px;
+}
+.middlePostsTxt p {
+    font-size: 15px;
+}
+
+.cardmiddlePosts img {
+    width: 340px;
+    height: 210px;
+}
+
+.middlePostHr, .bigPostHr {
+    margin: 30px 0px;
+}
+
