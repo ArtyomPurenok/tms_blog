@@ -2,22 +2,24 @@ import React from 'react';
 import './Card.css'
 
 type CardProps = {
-    CardClass?: string
-    CardImg?: string
-    CardData?: string
-    CardTitle?: string
-    CardArticle?: string
+    cardClass?: string
+    cardImg?: string
+    cardImgClass?: string
+    cardData?: string
+    cardTitle?: string
+    cardArticle?: string
+    cardTxtClass?: string
 }
 
-export const Card = (({CardImg, CardData, CardTitle, CardArticle, CardClass}: CardProps) => {
-    return <div className={CardClass}>
+export const Card = (({cardImg, cardImgClass, cardData, cardTitle, cardArticle, cardClass, cardTxtClass}: CardProps) => {
+    return <div className={cardClass}>
 
-        <div>{CardImg}</div>
+        <img className={cardImgClass} src={cardImg}/>
 
-        <div>
-            <p>{CardData}</p>
-            <h1>{CardTitle}</h1>
-            {CardArticle && <p>{CardArticle}</p>}
+        <div className={cardTxtClass}>
+            <p>{cardData}</p>
+            <h1>{cardTitle}</h1>
+            {cardArticle && <p>{cardArticle}</p>}
         </div>
 
 

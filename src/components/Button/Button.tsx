@@ -1,20 +1,20 @@
 import React from 'react';
 
 type buttonProps = {
-    BtnClass?: string
+    btnClass?: string
     functionLikeNumber?: any
     BtnIcon?: any
     likeNumber?: number
-    BtnTxt?: string
+    btnTxt?: string
 }
 
-export const Button = (({BtnClass, functionLikeNumber, BtnIcon, likeNumber, BtnTxt}: buttonProps) => {
+export const Button = (({btnClass, functionLikeNumber, BtnIcon, likeNumber, btnTxt}: buttonProps) => {
     return <div>
         <button 
         onClick={functionLikeNumber}
-        className={BtnClass}
+        className={btnClass}
         >
-            {BtnTxt}
+            {btnTxt}
             {BtnIcon && <BtnIcon height='100%'/>}
             {likeNumber}
         </button>
