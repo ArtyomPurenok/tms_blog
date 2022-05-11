@@ -1,34 +1,34 @@
 import React from "react";
-import './AstronautsCenterPosts.css'
+import './AstronautsCenterPosts.css';
 
-import {Card} from '../../components/Card'
-import {LikeBox} from '../../components/LikeBox'
+import {Card} from '../../components/Card';
+import {LikeBox} from '../../components/LikeBox';
 
-type AstrsCenterPostsProps = {
-    DataServer?: any
-}
+type CenterPostsProps = {
+    dataServer?: any
+};
 
-export const AstronautsCenterPosts = (({DataServer}:AstrsCenterPostsProps) => {
-    const CardLargeAverage = DataServer.map((el: any) => {
+export const AstronautsCenterPosts = (({dataServer}:CenterPostsProps) => {
+    const CardLargeAverage = dataServer.map((el: any) => {
         if(el.id === 1) {
-            return <div className="bigPost">
-                <Card CardClass="cardBigPost" CardImg={el.img} CardData={el.data} CardTitle={el.h1} CardArticle={el.article} CardTxtClass='bigPostTxt'/>
+            return <div className="big-post">
+                <Card CardClass="card-big-post" CardImg={el.img} CardData={el.data} CardTitle={el.h1} CardArticle={el.article} CardTxtClass='big-post-txt'/>
                 <LikeBox/>
-                <hr className="bigPostHr"/>
+                <hr className="big-post-hr"/>
             </div>
         }
 
         if (el.id === 2) {
-            return <div className="middlePosts">
-                <Card CardClass="cardmiddlePosts" CardImg={el.img} CardData={el.data} CardTitle={el.h1} CardArticle={el.article} CardTxtClass='middlePostsTxt'/>
+            return <div className="middle-posts">
+                <Card CardClass="card-middle-posts" CardImg={el.img} CardData={el.data} CardTitle={el.h1} CardArticle={el.article} CardTxtClass='middle-posts-txt'/>
                 <LikeBox/>
-                <hr className="middlePostHr"/>
+                <hr className="middle-post-hr"/>
             </div>
         }
     })
 
     
-    return <div className="astronautsCenterPosts">
+    return <div className="astronauts-center-posts">
 
         {CardLargeAverage}
 

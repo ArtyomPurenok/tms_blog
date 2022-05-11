@@ -1,0 +1,37 @@
+.astromauts-littele-posts {
+    background-color: yellow;
+    width: 400px;
+    height: 300px;
+    margin: 50px auto 0px 40px;
+}
+
+.card-littele-post {
+    width: 400px;
+    height: 134px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px auto 0px auto;
+}
+
+.card-littele-post img {
+    width: 120px;
+    height: 100px;
+}
+
+.card-littele-post p {
+    margin: 7px auto;
+    font-size: 14px;
+}
+
+.card-littele-post h1 {
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+.littele-post-hr {
+    margin: 15px 0px 30px 0px;
+}
+
+.card-little-txt {
+    margin: 0px 20px auto 0px;
+}

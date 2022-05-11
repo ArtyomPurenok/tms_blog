@@ -1,7 +1,8 @@
 import React from "react";
-import './AstronautsPageMain.css'
+import './AstronautsPageMain.css';
 
-import {AstronautsCenterPosts} from './AstronautsCenterPosts'
+import {AstronautsCenterPosts} from './AstronautsCenterPosts';
+import {AstronautsLittlePosts} from './AstronautsLittlePosts';
 
 interface IPostsFromServer {
     id: number
@@ -10,7 +11,7 @@ interface IPostsFromServer {
     article?: string
     img: string
     type: string
-}
+};
 
 const postsFromServer: IPostsFromServer[] = [
     {
@@ -103,10 +104,10 @@ const postsFromServer: IPostsFromServer[] = [
 
 
 export const AstronautsPageMain = (() => {
-    return <div className="astronautsPageMain">
+    return <div className="astronauts-Page-Main">
     
-    <AstronautsCenterPosts DataServer={postsFromServer}/>
-    
+    <AstronautsCenterPosts dataServer={postsFromServer}/>
+    <AstronautsLittlePosts dataTwoServer={postsFromServer}/>
     
     </div>
 })

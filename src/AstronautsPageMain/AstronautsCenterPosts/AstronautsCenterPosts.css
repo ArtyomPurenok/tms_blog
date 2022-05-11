@@ -1,29 +1,28 @@
-.astronautsCenterPosts {
+.astronauts-center-posts {
     width: 700px;
     background-color: greenyellow;
-    margin: 50px auto 0px 320px;
+    margin: 50px 0px 0px 270px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between
 }
 
 
-.bigPostTxt {
+.big-post-txt {
     margin: 0px 15px 20px 0px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.bigPostTxt p {
+.big-post-txt p {
     font-size: 16px;
 }
 
-.cardBigPost img{
+.card-big-post img{
     width: 250px;
     height: 210px;
 }
 
-.cardBigPost {
-
+.card-big-post {
     width: 700px;
     height: 350px;
     font-size: 14px;
@@ -33,28 +32,28 @@
 
 
 
-.cardmiddlePosts {
+.card-middle-posts {
     width: 340px;
     height: 350px;
     margin: 0px;
 }
 
-.middlePostsTxt {
+.middle-posts-txt {
     font-size: 10px;
 }
-.middlePostsTxt h1 {
+.middle-posts-txt h1 {
     font-size: 19px;
 }
-.middlePostsTxt p {
+.middle-posts-txt p {
     font-size: 15px;
 }
 
-.cardmiddlePosts img {
+.card-middle-posts img {
     width: 340px;
     height: 210px;
 }
 
-.middlePostHr, .bigPostHr {
-    margin: 30px 0px;
+.middle-post-hr, .big-post-hr {
+    margin: 20px 0px 30px 0px;
 }
 

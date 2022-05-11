@@ -1,1 +1,0 @@
-export {LikePanel} from './LikeBox'
