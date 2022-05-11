@@ -1,10 +1,9 @@
 .astronauts-center-posts {
     width: 700px;
-    background-color: greenyellow;
-    margin: 50px 0px 0px 270px;
+    margin: 0px 0px 0px 270px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 
@@ -12,9 +11,11 @@
     margin: 0px 15px 20px 0px;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: rgba(49, 48, 55, 1);
 }
 .big-post-txt p {
     font-size: 16px;
+    color: rgba(141, 142, 151, 1);
 }
 
 .card-big-post img{
@@ -43,9 +44,11 @@
 }
 .middle-posts-txt h1 {
     font-size: 19px;
+    color: rgba(49, 48, 55, 1);
 }
 .middle-posts-txt p {
     font-size: 15px;
+    color: rgba(141, 142, 151, 1);
 }
 
 .card-middle-posts img {

@@ -1,8 +1,8 @@
 import React from "react";
 import './AstronautsCenterPosts.css';
 
-import {Card} from '../../components/Card';
-import {LikeBox} from '../../components/LikeBox';
+import {Card} from '../../../components/Card';
+import {LikeBox} from '../../../components/LikeBox';
 
 type CenterPostsProps = {
     dataServer?: any

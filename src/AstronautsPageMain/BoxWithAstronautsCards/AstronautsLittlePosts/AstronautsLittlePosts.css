@@ -1,8 +1,7 @@
 .astromauts-littele-posts {
-    background-color: yellow;
     width: 400px;
     height: 300px;
-    margin: 50px auto 0px 40px;
+    margin: 0px auto 0px 40px;
 }
 
 .card-littele-post {
@@ -21,11 +20,13 @@
 .card-littele-post p {
     margin: 7px auto;
     font-size: 14px;
+    color: rgba(141, 142, 151, 1);
 }
 
 .card-littele-post h1 {
     font-size: 20px;
     margin: 0px auto;
+    color: rgba(49, 48, 55, 1);
 }
 
 .littele-post-hr {

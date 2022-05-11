@@ -1,8 +1,10 @@
 import React from "react";
 import './AstronautsPageMain.css';
 
-import {AstronautsCenterPosts} from './AstronautsCenterPosts';
-import {AstronautsLittlePosts} from './AstronautsLittlePosts';
+import {BoxWithAstronautsCards} from './BoxWithAstronautsCards'
+import {Header} from '../Header'
+import {Footer} from '../Footer'
+import {PageTittle} from '../components/PageTittle'
 
 interface IPostsFromServer {
     id: number
@@ -105,9 +107,10 @@ const postsFromServer: IPostsFromServer[] = [
 
 export const AstronautsPageMain = (() => {
     return <div className="astronauts-Page-Main">
-    
-    <AstronautsCenterPosts dataServer={postsFromServer}/>
-    <AstronautsLittlePosts dataTwoServer={postsFromServer}/>
+    <Header/>
+    <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-page-tittle'/>
+    <BoxWithAstronautsCards dataServer={postsFromServer}/>
+    <Footer/>
     
     </div>
 })

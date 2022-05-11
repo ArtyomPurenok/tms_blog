@@ -1,15 +1,15 @@
 import React from "react";
 import './AstronautsLittlePosts.css';
 
-import {Card} from '../../components/Card';
-import {LikeBox} from '../../components/LikeBox';
+import {Card} from '../../../components/Card';
+import {LikeBox} from '../../../components/LikeBox';
 
 type LittlePostProps = {
-    dataTwoServer: any
+    dataServer: any
 }
 
-export const AstronautsLittlePosts = (({dataTwoServer}: LittlePostProps) => {
-    let LittlePosts = dataTwoServer.map((el: any) => {
+export const AstronautsLittlePosts = (({dataServer}: LittlePostProps) => {
+    let LittlePosts = dataServer.map((el: any) => {
         if(el.id === 3) {
             return <div>
                 <Card CardClass="card-littele-post" CardImg={el.img} CardData={el.data} CardTitle={el.h1} CardTxtClass='card-little-txt'/>

@@ -1,5 +1,11 @@
+body {
+    background-color: rgb(230, 230, 230);
+}
+
 .astronauts-Page-Main {
     width: 1680px;
-    background-color: bisque;
-    display: flex;
+}
+
+.astronauts-page-tittle {
+    margin: 0px auto 0px 270px;
 }
