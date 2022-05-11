@@ -1,0 +1,1 @@
+export {SignUpCenterBox} from './SignUpCenterBox'

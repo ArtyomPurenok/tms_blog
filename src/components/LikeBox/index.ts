@@ -1,1 +1,0 @@
-export {LikeBox} from './LikeBox'
