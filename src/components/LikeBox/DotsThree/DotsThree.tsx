@@ -10,6 +10,6 @@ import { ReactComponent as DotsThreeIcon } from '../../Icons/ThreeDotsIcon.svg'
 export const DotsThree = (() => {
 
     return <div>
-        <Button BtnIcon={DotsThreeIcon}/>
+        <Button BtnIcon={DotsThreeIcon} btnClass='btn-dotsThree'/>
     </div>
 })
