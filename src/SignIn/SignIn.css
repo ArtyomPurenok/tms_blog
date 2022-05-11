@@ -6,15 +6,3 @@ body {
     width: 1680px;
 }
 
-.signIn-Div-Txt {
-    margin: 60px auto 60px 340px;
-    color: rgba(49, 48, 55, 1);
-}
-
-.signIn-ComeHome {
-    font-size: 12px;
-}
-
-.signIn-Title {
-    font-size: 40px;
-}
