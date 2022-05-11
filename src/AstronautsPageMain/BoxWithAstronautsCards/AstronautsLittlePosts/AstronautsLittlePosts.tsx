@@ -12,7 +12,7 @@ export const AstronautsLittlePosts = (({dataServer}: LittlePostProps) => {
     let LittlePosts = dataServer.map((el: any) => {
         if(el.id === 3) {
             return <div>
-                <Card CardClass="card-littele-post" CardImg={el.img} CardData={el.data} CardTitle={el.h1} CardTxtClass='card-little-txt'/>
+                <Card cardClass="card-littele-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardTxtClass='card-little-txt'/>
                 <LikeBox/>
                 <hr className="littele-post-hr"/>
                 </div>
