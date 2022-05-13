@@ -1,6 +1,4 @@
-%stDisplay {
-    display: flex;
-}
+@import "../../Style/Style.scss";
 
 .like-box {
     width: 100%;
@@ -8,11 +6,11 @@
     @extend %stDisplay;
     justify-content: space-between;
 
-    .like-box__left {
+    &__left {
         @extend %stDisplay
     }
 
-    .like-box__right {
+    &__right {
         @extend %stDisplay
     }
     
