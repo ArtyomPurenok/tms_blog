@@ -1,5 +1,5 @@
 import React from 'react';
-import './Input.css'
+import './Input.scss'
 
 type InputProps = {
     inputClass?: string
@@ -13,7 +13,7 @@ type InputProps = {
 export const Input = (({inputClass, inputType, inputPlaceholder, inputOnChange, inputName, inputGeneralDiv}: InputProps) => {
 
     return <div className={inputGeneralDiv}>
-        {inputName && <p className='input-P'>{inputName}</p>}
+        {inputName && <p className='input__p'>{inputName}</p>}
         <input className={inputClass} onChange={inputOnChange} type={inputType} placeholder={inputPlaceholder}/>
     </div>
 })

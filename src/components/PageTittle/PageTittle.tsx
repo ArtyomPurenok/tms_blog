@@ -1,5 +1,5 @@
 import React from "react";
-import './PageTittle.css'
+import './PageTittle.scss'
 
 type PageTitleProps = {
     pageTitleComeHome?: string
@@ -8,10 +8,10 @@ type PageTitleProps = {
 }
 
 export const PageTittle = (({pageTitleComeHome, pageTitleTxt, pageTitleGeneralDiv}:PageTitleProps ) => {
-    return <div className={`page-title-general-div ${pageTitleGeneralDiv}`}>
+    return <div className={`page-title__general-div ${pageTitleGeneralDiv}`}>
 
-             {pageTitleComeHome && <p className="page-title-comeHome">{pageTitleComeHome}</p>}
-             <h1 className="page-title-txt">{pageTitleTxt}</h1>
+             {pageTitleComeHome && <p className="page-title__comeHome">{pageTitleComeHome}</p>}
+             <h1 className="page-title__txt">{pageTitleTxt}</h1>
 
            </div>
 

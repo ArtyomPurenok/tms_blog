@@ -1,0 +1,19 @@
+%stDisplay {
+    display: flex;
+}
+
+.like-box {
+    width: 100%;
+    height: 40px;
+    @extend %stDisplay;
+    justify-content: space-between;
+
+    .like-box__left {
+        @extend %stDisplay
+    }
+
+    .like-box__right {
+        @extend %stDisplay
+    }
+    
+}
