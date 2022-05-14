@@ -1,11 +1,11 @@
 import React from 'react';
 
-import {LikeBox} from './components/LikeBox'
+import {AstronautsMainTwoPage} from './AstronautsMainTwoPage';
 
 function App() {
   return (
     <div className="App">
-      <LikeBox/>
+      <AstronautsMainTwoPage/>
     </div>
   );
 }

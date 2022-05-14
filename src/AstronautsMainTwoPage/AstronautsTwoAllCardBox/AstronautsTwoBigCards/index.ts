@@ -1,0 +1,1 @@
+export {AstronautsTwoBigCards} from './AstronautsTwoBigCards'
