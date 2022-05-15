@@ -10,8 +10,8 @@ type CenterPostsProps = {
 };
 
 export const AstronautsCenterPosts = (({dataServer}:CenterPostsProps) => {
-    const CardLargeAverage = dataServer.map((el: any) => {
-        if(el.id === 1) {
+    const CardLargeAverage = dataServer.map((el: any, index: any) => {
+        if(index === 0) {
             return <div>
                 <Card cardClass="card-big-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardArticle={el.article} cardTxtClass='card-big-post__txt'/>
                 <LikeBox/>
@@ -19,7 +19,7 @@ export const AstronautsCenterPosts = (({dataServer}:CenterPostsProps) => {
             </div>
         }
 
-        if (el.id === 2) {
+        if (index === 1 || 2 || 3 || 4) {
             return <div>
                 <Card cardClass="card-middle-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardArticle={el.article} cardTxtClass='card-middle-post__txt'/>
                 <LikeBox/>
