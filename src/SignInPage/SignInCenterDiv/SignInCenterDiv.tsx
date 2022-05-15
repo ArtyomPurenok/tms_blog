@@ -1,5 +1,5 @@
 import React from "react";
-import './SignInCenterDiv.css'
+import './SignInCenterDiv.scss'
 
 import {SignInInputBox} from './SignInInputBox'
 import {SignInButtonBox} from './SignInButtonBox'
