@@ -1,15 +1,13 @@
 import React from "react";
 import './AstronautsTwoAllCardBox.scss';
 
-import {AstronautsTwoBigCards} from './AstronautsTwoBigCards'
+import {AstronautsTwoBigCards} from './AstronautsTwoBigCards';
+import {AstronautsTwoSmallCards} from './AstronautsTwoSmallCards';
 
-
-type BigCardType = {
-    arrBigCard: any
-}
 
 export const AstronautsTwoAllCardBox = (() => {
-    return <div>
+    return <div className="astronauts-two-all-card-box">
         <AstronautsTwoBigCards/>
+        <AstronautsTwoSmallCards/>
     </div>
 })

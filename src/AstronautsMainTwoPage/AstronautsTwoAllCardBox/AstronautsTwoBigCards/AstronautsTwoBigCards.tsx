@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import './AstronautsTwoBigCards.scss';
 
-import {arrBigCard} from '../CardsAssembly'
+import {arrBigCards} from '../CardsAssembly';
+
 // // const BigCard = useContext(DataFromServer);
 
 
 export const AstronautsTwoBigCards = (() => {
 
-    return <div>
-        {arrBigCard}
+    return <div className="astronauts-two-big-cards">
+        {arrBigCards}
+
     </div>
 })

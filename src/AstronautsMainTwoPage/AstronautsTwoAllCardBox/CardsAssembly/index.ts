@@ -1,2 +1,2 @@
-export {arrBigCard} from './CardsAssembly';
-export {arrSmollCard} from './CardsAssembly';
+export {arrBigCards} from './CardsAssembly';
+export {arrSmallCard} from './CardsAssembly';
