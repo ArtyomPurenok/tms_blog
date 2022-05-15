@@ -1,1 +1,0 @@
-export {LikeDown} from './LikeDown'
