@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './Header.scss';
 
 import {Button} from '../components/Button'
 
@@ -15,16 +15,16 @@ export const Header = (({headerUser, headerUserIcon}: HeaderProps) => {
     
 
     return <div className='header'>
-        <div className='header-Left'>
-            <Button btnClass={'header-Btn-Burger'} BtnIcon={MenuIcon}/>
-            <hr className='header-Hr'/>
+        <div className='header__left'>
+            <Button btnClass={'header__btn-burger'} BtnIcon={MenuIcon}/>
+            <hr className='header__hr'/>
         </div>
-        <div className='header-Right'>
-            <hr className='header-Hr'/>
-            <Button btnClass={'header-Btn-Seach'} BtnIcon={SearchIcon}/>
-            <hr className='header-Hr'/>
-            {headerUser && <Button btnClass={'header-User'} btnTxt={headerUser}/>}
-            {headerUserIcon && <Button btnClass={'header-User-Icon'} BtnIcon={headerUserIcon}/>}
+        <div className='header__right'>
+            <hr className='header-hr'/>
+            <Button btnClass={'header__btn-seach'} BtnIcon={SearchIcon}/>
+            <hr className='header__hr'/>
+            {headerUser && <Button btnClass={'header__btn-user-name'} btnTxt={headerUser}/>}
+            {headerUserIcon && <Button btnClass={'header__user-icon'} BtnIcon={headerUserIcon}/>}
             
         </div>
 

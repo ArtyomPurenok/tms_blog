@@ -1,14 +1,14 @@
 import React from 'react';
-import './Footer.css';
+import './Footer.scss';
 
 
 export const Footer =(() => {
     return <div className='footer'>
-        <hr className='footer-Hr'/>
+        <hr className='footer__hr'/>
 
-        <div className='footer-Divs-Txt'>
-            <div><p className='footer-Txt'>©2022 Blogfolio</p></div>
-            <div><p className='footer-Txt'>All rights reserved</p></div>
+        <div className='footer__divs-txt'>
+            <div><p className='footer__txt'>©2022 Blogfolio</p></div>
+            <div><p className='footer__txt'>All rights reserved</p></div>
         </div>
     </div>
 })
