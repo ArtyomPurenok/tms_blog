@@ -8,7 +8,7 @@ type PageTitleProps = {
 }
 
 export const PageTittle = (({pageTitleComeHome, pageTitleTxt, pageTitleGeneralDiv}:PageTitleProps ) => {
-    return <div className={`page-title__general-div ${pageTitleGeneralDiv}`}>
+    return <div className={`page-title ${pageTitleGeneralDiv}`}>
 
              {pageTitleComeHome && <p className="page-title__comeHome">{pageTitleComeHome}</p>}
              <h1 className="page-title__txt">{pageTitleTxt}</h1>
