@@ -1,13 +1,13 @@
 import React from "react";
-import './SignUpInputsBox.css';
+import './SignUpInputsBox.scss';
 
 import {Input} from '../../../components/Input'
 
 export const SignUpInputsBox = (() => {
     return <div className="signUp-inputs-box">
-        <Input inputName='Name' inputGeneralDiv='signUp-input-name-div' inputClass='signUp-input-name' inputPlaceholder='Your name'/>
-        <Input inputName='Email' inputGeneralDiv='signUp-input-email-div' inputClass='signUp-input-email' inputPlaceholder='Your email'/>
-        <Input inputName='Password' inputGeneralDiv='signUp-input-password-div' inputClass='signUp-input-password' inputPlaceholder='Your password' inputType='password'/>
-        <Input inputName='Confirm password' inputGeneralDiv='signUp-input-confPassword-div' inputClass='signUp-input-confPassword' inputPlaceholder='Confirm password' inputType='password'/>
+        <Input inputName='Name' inputGeneralDiv='signUp-inputs-box__name-div' inputClass='signUp-inputs-box__input-name' inputPlaceholder='Your name'/>
+        <Input inputName='Email' inputGeneralDiv='signUp-inputs-box__email-div' inputClass='signUp-inputs-box__input-email' inputPlaceholder='Your email'/>
+        <Input inputName='Password' inputGeneralDiv='signUp-inputs-box__password-div' inputClass='signUp-inputs-box__input-password' inputPlaceholder='Your password' inputType='password'/>
+        <Input inputName='Confirm password' inputGeneralDiv='signUp-inputs-box__confPassword-div' inputClass='signUp-inputs-box__input-confPassword' inputPlaceholder='Confirm password' inputType='password'/>
     </div>
 })

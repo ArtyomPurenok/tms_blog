@@ -1,5 +1,5 @@
 import React from "react";
-import './SignUpCenterBox.css';
+import './SignUpCenterBox.scss';
 
 import {SignUpInputsBox} from './SignUpInputsBox'
 import {SignUpButtonBox} from './SignUpButtonBox'
