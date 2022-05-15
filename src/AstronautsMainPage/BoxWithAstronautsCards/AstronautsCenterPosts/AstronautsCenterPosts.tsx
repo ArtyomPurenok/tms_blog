@@ -1,8 +1,9 @@
 import React from "react";
-import './AstronautsCenterPosts.css';
+import './AstronautsCenterPosts.scss';
 
 import {Card} from '../../../components/Card';
 import {LikeBox} from '../../../components/LikeBox';
+import {LineButtom} from '../../../components/LineButtom';
 
 type CenterPostsProps = {
     dataServer?: any
@@ -11,18 +12,18 @@ type CenterPostsProps = {
 export const AstronautsCenterPosts = (({dataServer}:CenterPostsProps) => {
     const CardLargeAverage = dataServer.map((el: any) => {
         if(el.id === 1) {
-            return <div className="big-post">
-                <Card cardClass="card-big-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardArticle={el.article} cardTxtClass='big-post-txt'/>
+            return <div>
+                <Card cardClass="card-big-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardArticle={el.article} cardTxtClass='card-big-post__txt'/>
                 <LikeBox/>
-                <hr className="big-post-hr"/>
+                <LineButtom/>
             </div>
         }
 
         if (el.id === 2) {
-            return <div className="middle-posts">
-                <Card cardClass="card-middle-posts" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardArticle={el.article} cardTxtClass='middle-posts-txt'/>
+            return <div>
+                <Card cardClass="card-middle-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardArticle={el.article} cardTxtClass='card-middle-post__txt'/>
                 <LikeBox/>
-                <hr className="middle-post-hr"/>
+                <LineButtom/>
             </div>
         }
     })

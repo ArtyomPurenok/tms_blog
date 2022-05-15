@@ -1,5 +1,5 @@
 import React from "react";
-import './AstronautsPageMain.css';
+import './AstronautsMainPage.scss';
 
 import {BoxWithAstronautsCards} from './BoxWithAstronautsCards'
 import {Header} from '../Header'
@@ -105,10 +105,10 @@ const postsFromServer: IPostsFromServer[] = [
 ]
 
 
-export const AstronautsPageMain = (() => {
-    return <div className="astronauts-Page-Main">
+export const AstronautsMainPage = (() => {
+    return <div className="astronauts-main-page">
     <Header/>
-    <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-page-tittle'/>
+    <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-page__tittle'/>
     <BoxWithAstronautsCards dataServer={postsFromServer}/>
     <Footer/>
     

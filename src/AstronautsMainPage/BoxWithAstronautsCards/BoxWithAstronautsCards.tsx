@@ -1,5 +1,5 @@
 import React from "react";
-import './BoxWithAstronautsCards.css'
+import './BoxWithAstronautsCards.scss'
 
 import {AstronautsCenterPosts} from './AstronautsCenterPosts';
 import {AstronautsLittlePosts} from './AstronautsLittlePosts';
@@ -9,7 +9,7 @@ type IBoxWithAstronautsCardsProps = {
 }
 
 export const BoxWithAstronautsCards = (({dataServer}: IBoxWithAstronautsCardsProps) => {
-    return <div className="root-box-astr-cards">
+    return <div className="box-with-astronauts-cards">
             <AstronautsCenterPosts dataServer={dataServer}/>
             <AstronautsLittlePosts dataServer={dataServer}/>
     </div>
