@@ -2,6 +2,10 @@ import React from "react";
 import './AstronautsMainTwoPage.scss';
 
 import {AstronautsTwoAllCardBox} from './AstronautsTwoAllCardBox';
+import {Header} from '../Header';
+import {Footer} from '../Footer';
+import {PageTittle} from '../components/PageTittle';
+
 
 type DateServer = {
     img: string
@@ -78,7 +82,10 @@ export const AstronautsTwoDataServer: DateServer[] = [
 
 export const AstronautsMainTwoPage = (() => {
 
-    return <div>
+    return <div className="astronauts-main-two-page">
+        <Header/>
+        <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-two-page__page-tittle'/>
         <AstronautsTwoAllCardBox/>
+        <Footer/>
     </div>
 })

@@ -5,6 +5,7 @@
     height: 40px;
     @extend %stDisplay;
     justify-content: space-between;
+    margin-top: 20px;
 
     &__left {
         @extend %stDisplay

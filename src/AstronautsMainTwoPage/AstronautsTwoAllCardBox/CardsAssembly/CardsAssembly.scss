@@ -11,10 +11,12 @@
     }
 
     p {
+        color: $stColorLightGray;
         font-size: $stdateFS;
     }
 
     h1{
+        color: $stColor;
         font-size: $stTitleFS;
     }
 }
@@ -31,10 +33,12 @@
     }
 
     p{
+        color: $stColorLightGray;
         font-size: $stdateFS;
     }
 
     h1{
+        color: $stColor;
         font-size: $stTitleFS;
     }
 }

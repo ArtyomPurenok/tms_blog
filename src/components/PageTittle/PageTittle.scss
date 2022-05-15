@@ -1,12 +1,16 @@
-.page-title__general-div {
+@import "../../Style/Style.scss";
+
+.page-title {
     height: 100px;
-    color: rgba(49, 48, 55, 1);
+    color: $stColor;
+
+    &__comeHome {
+        font-size: 12px;
+    }
+
+    &__txt {
+        font-size: 40px;
+    }
 }
 
-.page-title__comeHome {
-    font-size: 12px;
-}
 
-.page-title__txt {
-    font-size: 40px;
-}
