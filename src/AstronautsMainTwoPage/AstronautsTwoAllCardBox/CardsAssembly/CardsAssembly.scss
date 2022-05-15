@@ -1,7 +1,9 @@
 @import "../../../Style/Style.scss";
 
 .astronaut-two-big-card {
-    width: 340px;
+    width: $stCardAverageWD;
+    height: $stCardAverageHG;
+    margin-bottom: $stCardAverageMargin-bottom;
 
     img {
         width: 100%;
@@ -17,6 +19,22 @@
     }
 }
 
-// .astronaut-two-small-card {
+.astronaut-two-small-card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: $stCardSmallWD;
+    height: $stCardSmallHG;
 
-// }
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    p{
+        font-size: $stdateFS;
+    }
+
+    h1{
+        font-size: $stTitleFS;
+    }
+}

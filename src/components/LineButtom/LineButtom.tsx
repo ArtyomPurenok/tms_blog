@@ -3,7 +3,7 @@ import './LineButtom.scss';
 
 
 export const LineButtom = (() => {
-    return <div>
-        <hr className="hr"/>
+    return <div className="hr">
+        <hr/>
     </div>
 })
