@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {store} from './redux/store';
+import { Provider } from 'react-redux';
 import {BrowserRouter, Routes, Route, Router} from 'react-router-dom';
 import {AddPost} from './router/AddPost/addPost';
 import {Post} from './router/post';
@@ -15,6 +17,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<App/>}/>
@@ -32,6 +35,7 @@ root.render(
       </Routes>
     <App />
     </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
