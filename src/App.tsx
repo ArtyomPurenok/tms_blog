@@ -1,7 +1,8 @@
 import React from 'react';
 
-import {LikeBox} from './components/LikeBox';
 import {Link} from 'react-router-dom';
+import {LikeBox} from './components/LikeBox';
+
 
 function App() {
   return (
