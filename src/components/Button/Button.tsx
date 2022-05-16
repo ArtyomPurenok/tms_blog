@@ -1,4 +1,5 @@
 import React from 'react';
+import './Button.scss';
 
 type buttonProps = {
     btnClass?: string

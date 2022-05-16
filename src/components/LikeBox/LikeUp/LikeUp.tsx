@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LikeUp.css'
+import './LikeUp.scss'
 
 import {Button} from '../../Button'
 
@@ -13,6 +13,6 @@ type LikeUpProps = {
 export const LikeUp = (({functionLikeNumber, likeNumber}: LikeUpProps) => {
 
     return <div>
-        <Button functionLikeNumber={functionLikeNumber} BtnIcon={LikeUpIcon} likeNumber={likeNumber} btnClass='btn-likeUp'/>
+        <Button functionLikeNumber={functionLikeNumber} BtnIcon={LikeUpIcon} likeNumber={likeNumber} btnClass='likeUp__btn'/>
     </div>
 })

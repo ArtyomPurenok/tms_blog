@@ -1,0 +1,16 @@
+@import "../../Style/Style.scss";
+
+.page-title {
+    height: 100px;
+    color: $stColor;
+
+    &__comeHome {
+        font-size: 12px;
+    }
+
+    &__txt {
+        font-size: 40px;
+    }
+}
+
+

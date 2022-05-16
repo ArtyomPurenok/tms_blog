@@ -1,0 +1,50 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(34, 49, 170, 1);
+    display: flex;
+    justify-content: space-between;
+
+    &__right, &__left {
+        display: flex;
+    }
+
+    &__btn-burger {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(34, 49, 170, 1);
+        border: transparent;
+    }
+
+    &__btn-seach {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(34, 49, 170, 1);
+        border: transparent;
+    }
+
+    &__hr {
+        width: 1px;
+        margin: 0px;
+        background-color: rgba(83, 96, 205, 1);
+        border: none;
+    }
+
+    &__btn-user-name {
+        width: 200px;
+        height: 60px;
+        font-weight: 600;
+        background-color: rgba(34, 49, 170, 1);
+        border: transparent;
+        color: white;
+    }
+
+    &__user-icon {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(34, 49, 170, 1);
+        border: transparent;
+        color: white;
+    }
+}

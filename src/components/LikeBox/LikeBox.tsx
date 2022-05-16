@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './LikeBox.css'
+import './LikeBox.scss'
 
 import {LikeUp} from './LikeUp'
 import {LikeDown} from './LikeDown'
@@ -13,14 +13,14 @@ export const LikeBox = (() => {
     const FunLikeNumber = (() => setLikeNumber(likeNumber + 1))
 
 
-    return <div className='like-Box'>
+    return <div className='like-box'>
 
-        <div className='like-Box-Left'>
+        <div className='like-box__left'>
             <LikeUp functionLikeNumber={FunLikeNumber}  likeNumber={likeNumber}/>
             <LikeDown/>
         </div>
 
-        <div className='like-Box-Right'>
+        <div className='like-box__right'>
             <Bookmark/>
             <DotsThree/>
         </div>        
