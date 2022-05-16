@@ -1,0 +1,14 @@
+.nav-panel {
+    width: 100%;
+    height: 80px;
+    display: flex;
+
+    &__hr {
+        position: fixed;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(218, 218, 218, 1);
+        margin-top: 68px;
+        border: none;
+    }
+}

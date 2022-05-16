@@ -8,6 +8,7 @@ import {AddPost} from './router/AddPost/addPost';
 import {Post} from './router/post';
 import {Posts} from './router/posts';
 import {Search} from './router/search';
+import {NavPanel} from './components/NavPanel';
 
 
 const root = ReactDOM.createRoot(
@@ -19,7 +20,7 @@ root.render(
     <Routes>
       <Route path='/' element={<App/>}/>
       <Route path='/posts/testStar' element={<Posts/>}/>
-      <Route path='/posts/add' element={<AddPost/>}/>
+      <Route path='/posts/add' element={<NavPanel/>}/>
       <Route path='/posts/:id' element={<Post/>}/>
       <Route path='/search' element={<Search/>}/>
       <Route

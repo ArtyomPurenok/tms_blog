@@ -14,6 +14,7 @@ export const Button = (({btnClass, functionLikeNumber, BtnIcon, likeNumber, btnT
         <button 
         onClick={functionLikeNumber}
         className={btnClass}
+        // {btnLink && <></>}
         >
             {btnTxt}
             {BtnIcon && <BtnIcon height='100%'/>}
