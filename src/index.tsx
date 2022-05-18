@@ -33,7 +33,6 @@ root.render(
         </main>
       }/>
       </Routes>
-    <App />
     </BrowserRouter>
     </Provider>
   </React.StrictMode>
