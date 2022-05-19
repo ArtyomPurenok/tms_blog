@@ -1,29 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import {useTheme} from './features/theme'
 
-import {Link} from 'react-router-dom';
-import {LikeBox} from './components/LikeBox';
 import {Button} from './components/Button';
-
+import {useAppDispatch, useAppSelector} from './redux/hooks'
+import {fetchPosts} from './features/posts';
+import {postsData} from './redux/postsData';
 
 function App() {
-  const [theme, setTheme] = useState('dark')
+  const {theme, toggleTheme} = useTheme()
 
-  const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(newTheme)
-  }
+  const posts = useAppSelector(state => state.posts.content)
+  const dispatch = useAppDispatch()
 
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(fetchPosts(postsData))
+    } ,1000)
+  } ,[])
+
+  console.log(posts)
   return (
     <div className="App">
+
       <div className={`App theme--${theme}`}>
-        <Button txt="Primary" className='primary' onClick={toggleTheme}/>
+        <Button btnTxt="Primary" btnClass='primary' functionLikeNumber={toggleTheme}/>
       </div>
-      {/* <nav>
-        <Link to='/posts'>Posts</Link>
-        <Link to='/posts/1'>Post 1</Link>
-        <Link to='/posts/add'>Add post</Link>
-        <Link to='/search'>Search</Link>
-      </nav> */}
+
     </div>
   );
 }
