@@ -4,8 +4,8 @@ import './AstronautsTwoSmallCards.scss';
 import {arrSmallCards} from '../CardsAssembly';
 
 
-export const AstronautsTwoSmallCards = (() => {
+export const AstronautsTwoSmallCards = () => {
     return <div className="astronauts-two-small-cards">
         {arrSmallCards}
     </div>
-})
+}

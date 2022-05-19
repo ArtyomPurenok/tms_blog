@@ -78,9 +78,8 @@ export const AstronautsTwoDataServer: DateServer[] = [
     },
 ]
 
-// export const DataFromServer = React.createContext(AstronautsTwoDataServer);
 
-export const AstronautsMainTwoPage = (() => {
+export const AstronautsMainTwoPage = () => {
 
     return <div className="astronauts-main-two-page">
         <Header/>
@@ -88,4 +87,4 @@ export const AstronautsMainTwoPage = (() => {
         <AstronautsTwoAllCardBox/>
         <Footer/>
     </div>
-})
+}

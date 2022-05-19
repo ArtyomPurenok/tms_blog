@@ -5,9 +5,9 @@ import {AstronautsTwoBigCards} from './AstronautsTwoBigCards';
 import {AstronautsTwoSmallCards} from './AstronautsTwoSmallCards';
 
 
-export const AstronautsTwoAllCardBox = (() => {
+export const AstronautsTwoAllCardBox = () => {
     return <div className="astronauts-two-all-card-box">
         <AstronautsTwoBigCards/>
         <AstronautsTwoSmallCards/>
     </div>
-})
+}
