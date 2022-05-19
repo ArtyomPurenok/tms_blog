@@ -5,7 +5,7 @@ import {Button} from '../../../../components/Button';
 
 export const SignInButtonBox = () => {
     return <div className="signIn-btn-box">
-        <Button btnClass="signIn-btn-box__login" btnTxt='Sign In'/>
+        <Button className="signIn-btn-box__login" txt='Sign In'/>
         <p className="signIn-btn-box__txt">Don’t have an account? <span className="signIn-btn-box__span">Sign Up</span></p>
     </div>
 }
