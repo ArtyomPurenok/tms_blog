@@ -9,7 +9,7 @@ type buttonProps = {
     btnTxt?: string
 }
 
-export const Button = (({btnClass, functionLikeNumber, BtnIcon, likeNumber, btnTxt}: buttonProps) => {
+export const Button = ({btnClass, functionLikeNumber, BtnIcon, likeNumber, btnTxt}: buttonProps) => {
     return <div>
         <button 
         onClick={functionLikeNumber}
@@ -21,4 +21,4 @@ export const Button = (({btnClass, functionLikeNumber, BtnIcon, likeNumber, btnT
             {likeNumber}
         </button>
     </div>
-})
+}

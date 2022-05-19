@@ -10,9 +10,9 @@ type LikeUpProps = {
     likeNumber: number
 }
 
-export const LikeUp = (({functionLikeNumber, likeNumber}: LikeUpProps) => {
+export const LikeUp = ({functionLikeNumber, likeNumber}: LikeUpProps) => {
 
     return <div>
         <Button functionLikeNumber={functionLikeNumber} BtnIcon={LikeUpIcon} likeNumber={likeNumber} btnClass='likeUp__btn'/>
     </div>
-})
+}

@@ -11,7 +11,7 @@ type CardProps = {
     cardTxtClass?: string
 }
 
-export const Card = (({cardImg, cardImgClass, cardData, cardTitle, cardArticle, cardClass, cardTxtClass}: CardProps) => {
+export const Card = ({cardImg, cardImgClass, cardData, cardTitle, cardArticle, cardClass, cardTxtClass}: CardProps) => {
     return <div className={cardClass}>
 
         <img className={cardImgClass} src={cardImg}/>
@@ -25,4 +25,4 @@ export const Card = (({cardImg, cardImgClass, cardData, cardTitle, cardArticle, 
 
 
     </div>
-})
+}

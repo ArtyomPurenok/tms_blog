@@ -11,7 +11,7 @@ type HeaderProps = {
     headerUserIcon?: string
 }
 
-export const Header = (({headerUser, headerUserIcon}: HeaderProps) => {
+export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
     
 
     return <div className='header'>
@@ -30,4 +30,4 @@ export const Header = (({headerUser, headerUserIcon}: HeaderProps) => {
 
 
     </div>
-})
+}

@@ -7,9 +7,9 @@ import { ReactComponent as BookmarkIcon } from '../../Icons/BookmarkIcon.svg'
 
 
 
-export const Bookmark = (() => {
+export const Bookmark = () => {
 
     return <div>
         <Button BtnIcon={BookmarkIcon} btnClass='bookmark__btn'/>
     </div>
-})
+}

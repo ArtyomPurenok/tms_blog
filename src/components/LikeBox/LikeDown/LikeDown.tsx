@@ -7,9 +7,9 @@ import { ReactComponent as LikeDownIcon } from '../../Icons/LikeDownIcon.svg'
 
 
 
-export const LikeDown = (() => {
+export const LikeDown = () => {
 
     return <div>
         <Button BtnIcon={LikeDownIcon} btnClass='likeDown__btn'/>
     </div>
-})
+}

@@ -10,10 +10,10 @@ type InputProps = {
     inputGeneralDiv?: string
 }
 
-export const Input = (({inputClass, inputType, inputPlaceholder, inputOnChange, inputName, inputGeneralDiv}: InputProps) => {
+export const Input = ({inputClass, inputType, inputPlaceholder, inputOnChange, inputName, inputGeneralDiv}: InputProps) => {
 
     return <div className={inputGeneralDiv}>
         {inputName && <p className='input__p'>{inputName}</p>}
         <input className={inputClass} onChange={inputOnChange} type={inputType} placeholder={inputPlaceholder}/>
     </div>
-})
+}

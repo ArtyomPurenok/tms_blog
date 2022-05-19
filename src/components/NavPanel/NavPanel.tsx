@@ -3,14 +3,7 @@ import './NavPanel.scss';
 
 import {NavPanelBtn} from './NavPanelBtn';
 
-export const NavPanel = (() => {
-    function background() {
-        return
-    }
-
-    
-
-
+export const NavPanel = () => {
 
     return <div className="nav-panel">
         <hr className="nav-panel__hr"/>
@@ -18,4 +11,4 @@ export const NavPanel = (() => {
         <NavPanelBtn name='My favorites'/>
         <NavPanelBtn name='Popular'/>
     </div>
-})
+}

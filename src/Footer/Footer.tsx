@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.scss';
 
 
-export const Footer =(() => {
+export const Footer =() => {
     return <div className='footer'>
         <hr className='footer__hr'/>
 
@@ -11,4 +11,4 @@ export const Footer =(() => {
             <div><p className='footer__txt'>All rights reserved</p></div>
         </div>
     </div>
-})
+}
