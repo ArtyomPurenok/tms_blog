@@ -1,0 +1,1 @@
+export {AstronautsCenterPosts} from './AstronautsCenterPosts'
