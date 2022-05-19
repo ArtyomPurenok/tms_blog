@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className={`App theme--${theme}`}>
-        <Button btnTxt="Primary" btnClass='primary' functionLikeNumber={toggleTheme}/>
+        <Button txt="Primary" className='primary' onClick={toggleTheme}/>
       </div>
       {/* <nav>
         <Link to='/posts'>Posts</Link>
