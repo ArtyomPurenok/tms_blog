@@ -1,5 +1,5 @@
 import React from "react";
-import './SignInPage.scss'
+import './SignIn.scss'
 
 import {SignInCenterDiv} from './SignInCenterDiv'
 import {PageTittle} from "../PageTittle";
@@ -7,7 +7,7 @@ import {PageTittle} from "../PageTittle";
 import {Header} from '../Header'
 import {Footer} from '../Footer'
 
-export const SignInPage = (() => {
+export const SignIn = () => {
     return <div className="sign-in">
 
         <Header/>
@@ -16,4 +16,4 @@ export const SignInPage = (() => {
         <Footer/>
         
     </div>
-})
+}
