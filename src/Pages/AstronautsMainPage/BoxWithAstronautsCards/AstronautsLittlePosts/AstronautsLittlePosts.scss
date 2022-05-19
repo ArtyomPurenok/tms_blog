@@ -1,31 +1,31 @@
+@import '../../../../Style/Style';
+
 .astromauts-littele-posts {
-    width: 400px;
-    height: 300px;
+    width: $stCardSmallWD;
     margin: 0px auto 0px 40px;
 }
 
 .card-littele-post {
-    width: 400px;
-    height: 134px;
+    width: $stCardSmallWD;
+    height: $stCardSmallHG;
     display: flex;
     flex-direction: row-reverse;
-    margin: 0px auto 0px auto;
 
     img {
-        width: 120px;
-        height: 100px;
+        width: $stCardSmallImgWD;
+        height: $stCardSmallImgHG;
     }
 
     p {
         margin: 7px auto;
         font-size: 14px;
-        color: rgba(141, 142, 151, 1);
+        color: $txtColor ;
     }
 
     h1 {
         font-size: 20px;
         margin: 0px auto;
-        color: rgba(49, 48, 55, 1);
+        color: $titleColor;
     }
 
     &__txt {

@@ -1,9 +1,9 @@
 import React from "react";
 import './AstronautsCenterPosts.scss';
 
-import {Card} from '../../../components/Card';
-import {LikeBox} from '../../../components/LikeBox';
-import {LineButtom} from '../../../components/LineButtom';
+import {Card} from '../../../../components/Card';
+import {LikeBox} from '../../../../components/LikeBox';
+import {LineButtom} from '../../../../components/LineButtom';
 
 type CenterPostsProps = {
     dataServer?: any
@@ -19,7 +19,7 @@ export const AstronautsCenterPosts = ({dataServer}:CenterPostsProps) => {
             </div>
         }
 
-        if (index === 1 || 2 || 3 || 4) {
+        if (index === 1 || index ===  2 || index ===  3 || index ===  4) {
             return <div>
                 <Card cardClass="card-middle-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardArticle={el.article} cardTxtClass='card-middle-post__txt'/>
                 <LikeBox/>
@@ -28,7 +28,6 @@ export const AstronautsCenterPosts = ({dataServer}:CenterPostsProps) => {
         }
     })
 
-    
     return <div className="astronauts-center-posts">
 
         {CardLargeAverage}

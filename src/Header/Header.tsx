@@ -11,23 +11,23 @@ type HeaderProps = {
     headerUserIcon?: string
 }
 
-export const Header = (({headerUser, headerUserIcon}: HeaderProps) => {
+export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
     
 
     return <div className='header'>
         <div className='header__left'>
-            <Button btnClass={'header__btn-burger'} BtnIcon={MenuIcon}/>
+            <Button className={'header__btn-burger'} Icon={MenuIcon}/>
             <hr className='header__hr'/>
         </div>
         <div className='header__right'>
             <hr className='header-hr'/>
-            <Button btnClass={'header__btn-seach'} BtnIcon={SearchIcon}/>
+            <Button className={'header__btn-seach'} Icon={SearchIcon}/>
             <hr className='header__hr'/>
-            {headerUser && <Button btnClass={'header__btn-user-name'} btnTxt={headerUser}/>}
-            {headerUserIcon && <Button btnClass={'header__user-icon'} BtnIcon={headerUserIcon}/>}
+            {headerUser && <Button className={'header__btn-user-name'} txt={headerUser}/>}
+            {headerUserIcon && <Button className={'header__user-icon'} Icon={headerUserIcon}/>}
             
         </div>
 
 
     </div>
-})
+}

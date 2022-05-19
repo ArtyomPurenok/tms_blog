@@ -1,14 +1,15 @@
+@import '../../../../Style/Style';
+
 .astronauts-center-posts {
-    width: 700px;
-    margin: 0px 0px 0px 270px;
+    width: $stCenterDivCards;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card-big-post {
-    width: 700px;
-    height: 350px;
+    width: $stBigCardWD;
+    height: $stAllCardHG;
     font-size: 14px;
     display: flex;
     flex-direction: row-reverse;
@@ -22,11 +23,11 @@
         margin: 0px 15px 20px 0px;
         overflow: hidden;
         text-overflow: ellipsis;
-        color: rgba(49, 48, 55, 1);
+        color: $titleColor;
 
         p {
             font-size: 16px;
-            color: rgba(141, 142, 151, 1);
+            color: $txtColor ;
         }
     }
 }
@@ -34,8 +35,8 @@
 
 
 .card-middle-post {
-    width: 340px;
-    height: 350px;
+    width: $stCardAverageWD;
+    height: $stAllCardHG;
     margin: 0px;
 
     img {
@@ -48,12 +49,12 @@
 
         h1 {
             font-size: 19px;
-            color: rgba(49, 48, 55, 1);
+            color: $titleColor;
         }
 
         p {
             font-size: 15px;
-            color: rgba(141, 142, 151, 1);
+            color: $txtColor ;
         }
     }
 }

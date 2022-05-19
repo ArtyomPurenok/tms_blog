@@ -1,9 +1,9 @@
 import React from "react";
 import './AstronautsLittlePosts.scss';
 
-import {Card} from '../../../components/Card';
-import {LikeBox} from '../../../components/LikeBox';
-import {LineButtom} from '../../../components/LineButtom'
+import {Card} from '../../../../components/Card';
+import {LikeBox} from '../../../../components/LikeBox';
+import {LineButtom} from '../../../../components/LineButtom';
 
 type LittlePostProps = {
     dataServer: any

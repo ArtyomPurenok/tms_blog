@@ -1,13 +1,11 @@
 import React from "react";
 import './AstronautsMainPage.scss';
 
-import {BoxWithAstronautsCards} from './BoxWithAstronautsCards'
-import {Header} from '../Header'
-import {Footer} from '../Footer'
-import {PageTittle} from '../components/PageTittle'
+import {BoxWithAstronautsCards} from './BoxWithAstronautsCards';
+import {Header} from '../../Header';
+import {Footer} from '../../Footer';
 
 interface IPostsFromServer {
-    id: number
     data: string
     h1: string
     article?: string
@@ -95,7 +93,6 @@ const postsFromServer: IPostsFromServer[] = [
 export const AstronautsMainPage = () => {
     return <div className="astronauts-main-page">
     <Header/>
-    <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-page__tittle'/>
     <BoxWithAstronautsCards dataServer={postsFromServer}/>
     <Footer/>
     
