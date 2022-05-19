@@ -1,7 +1,7 @@
 import React from "react";
 import './SignInInputBox.scss';
 
-import {Input} from '../../../components/Input'
+import {Input} from '../../../../components/Input';
 
 export const SignInInputBox = () => {
     return <div className="signIn-input-box">

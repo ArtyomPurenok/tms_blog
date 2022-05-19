@@ -1,0 +1,1 @@
+export {LikeUp} from './LikeUp'
