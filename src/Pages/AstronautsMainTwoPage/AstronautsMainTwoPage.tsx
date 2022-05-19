@@ -2,9 +2,9 @@ import React from "react";
 import './AstronautsMainTwoPage.scss';
 
 import {AstronautsTwoAllCardBox} from './AstronautsTwoAllCardBox';
-import {Header} from '../Header';
-import {Footer} from '../Footer';
-import {PageTittle} from '../components/PageTittle';
+import {Header} from '../../Header';
+import {Footer} from '../../Footer';
+import {PageTittle} from '../../components/PageTittle';
 
 
 type DateServer = {
@@ -13,7 +13,7 @@ type DateServer = {
     date: string
 }
 
-export const AstronautsTwoDataServer: DateServer[] = [
+const AstronautsTwoDataServer: DateServer[] = [
     {
         img: 'https://s3-alpha-sig.figma.com/img/9d6a/ee8c/289deedaac77204e10cdde00c1ea8501?Expires=1653264000&Signature=YjbTQV9RWPUZIW13A34eefBuGNw4iuApSqvbIkaW8eG0k-w5734tVddHd1me7wtRkfb521fOdi8sHF~lFdTLElM0PTVULDLVx9dUVyI6AvZimw-MO8VNpOa1NY~BMCgKTQ1baGw2JOEXfMnbKN0xBOP8BKGP8dsnsyA2JdTSMQ8GPxsUo2fZ3DK7HQpnIEcTumgi0JBFRcNN4BwaK2rL8ya3YayAx2GUzgP2oTxV9knX5QhZ36Wfop-2QaqOynfm1il8fjc13DF9ynm7tx-crjzDTz5F~nCvgIZrVXp-3HSIYZ0ETKj5rDxySKi7uDOib-QdDgEfDXPoSzPhT1c0og__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
         title: 'Astronauts prep for new solar arrays on nearly seven-hour spacewalk',
@@ -76,15 +76,18 @@ export const AstronautsTwoDataServer: DateServer[] = [
         title: 'Astronauts prep for new solar arrays on nearly seven-hour spacewalk',
         date: 'April 20, 2021',
     },
-]
+];
 
-
+export const DataServer = React.createContext(AstronautsTwoDataServer);
+console.log(DataServer)
 export const AstronautsMainTwoPage = () => {
 
     return <div className="astronauts-main-two-page">
+        <DataServer.Provider value={AstronautsTwoDataServer}>
         <Header/>
         <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-two-page__page-tittle'/>
         <AstronautsTwoAllCardBox/>
         <Footer/>
+        </DataServer.Provider>
     </div>
 }

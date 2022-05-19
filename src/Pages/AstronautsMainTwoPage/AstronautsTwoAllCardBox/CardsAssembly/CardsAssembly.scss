@@ -1,8 +1,8 @@
-@import "../../../Style/Style.scss";
+@import "../../../../Style/Style";
 
 .astronaut-two-big-card {
     width: $stCardAverageWD;
-    height: $stCardAverageHG;
+    height: $stAllCardHG;
     margin-bottom: $stCardAverageMargin-bottom;
 
     img {
@@ -11,12 +11,12 @@
     }
 
     p {
-        color: $stColorLightGray;
+        color: $txtColor;
         font-size: $stdateFS;
     }
 
     h1{
-        color: $stColor;
+        color: $titleColor;
         font-size: $stTitleFS;
     }
 }
@@ -33,12 +33,12 @@
     }
 
     p{
-        color: $stColorLightGray;
+        color: $txtColor;
         font-size: $stdateFS;
     }
 
     h1{
-        color: $stColor;
+        color: $titleColor;
         font-size: $stTitleFS;
     }
 }
