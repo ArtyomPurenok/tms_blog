@@ -9,7 +9,7 @@ type CenterPostsProps = {
     dataServer?: any
 };
 
-export const AstronautsCenterPosts = (({dataServer}:CenterPostsProps) => {
+export const AstronautsCenterPosts = ({dataServer}:CenterPostsProps) => {
     const CardLargeAverage = dataServer.map((el: any, index: any) => {
         if(index === 0) {
             return <div>
@@ -34,4 +34,4 @@ export const AstronautsCenterPosts = (({dataServer}:CenterPostsProps) => {
         {CardLargeAverage}
 
     </div>
-})
+}

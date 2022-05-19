@@ -92,7 +92,7 @@ const postsFromServer: IPostsFromServer[] = [
 ]
 
 
-export const AstronautsMainPage = (() => {
+export const AstronautsMainPage = () => {
     return <div className="astronauts-main-page">
     <Header/>
     <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-page__tittle'/>
@@ -100,4 +100,4 @@ export const AstronautsMainPage = (() => {
     <Footer/>
     
     </div>
-})
+}

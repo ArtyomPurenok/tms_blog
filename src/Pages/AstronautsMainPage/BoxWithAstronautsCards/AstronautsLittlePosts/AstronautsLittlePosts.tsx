@@ -9,7 +9,7 @@ type LittlePostProps = {
     dataServer: any
 }
 
-export const AstronautsLittlePosts = (({dataServer}: LittlePostProps) => {
+export const AstronautsLittlePosts = ({dataServer}: LittlePostProps) => {
     let LittlePosts = dataServer.slice(5).map((el: any) => {
             return <div>
                 <Card cardClass="card-littele-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardTxtClass='card-littele-post__txt'/>
@@ -21,4 +21,4 @@ export const AstronautsLittlePosts = (({dataServer}: LittlePostProps) => {
     return <div className="astromauts-littele-posts">
         {LittlePosts}
     </div>
-});
+};

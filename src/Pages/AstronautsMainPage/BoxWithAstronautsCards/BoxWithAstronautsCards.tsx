@@ -8,9 +8,9 @@ type IBoxWithAstronautsCardsProps = {
     dataServer: any
 }
 
-export const BoxWithAstronautsCards = (({dataServer}: IBoxWithAstronautsCardsProps) => {
+export const BoxWithAstronautsCards = ({dataServer}: IBoxWithAstronautsCardsProps) => {
     return <div className="box-with-astronauts-cards">
             <AstronautsCenterPosts dataServer={dataServer}/>
             <AstronautsLittlePosts dataServer={dataServer}/>
     </div>
-})
+}
