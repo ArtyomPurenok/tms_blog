@@ -1,18 +1,18 @@
 import React from "react";
-import './HeaderBtn.scss';
+import './ButtonForNav.scss';
 import {Link} from 'react-router-dom';
 
-type HeaderBtnProps = {
+type BtnNavProps = {
     onClick?: any
     txt: string
     route: string
 }
 
-export const HeaderBtn = ({onClick, txt, route}: HeaderBtnProps) => {
+export const ButtonForNav = ({onClick, txt, route}: BtnNavProps) => {
     return <div>
         <nav>
         <Link to={route}>
-        <button className='header-btn' onClick={onClick}>
+        <button className='button-for-nav' onClick={onClick}>
 
         {txt}     
 

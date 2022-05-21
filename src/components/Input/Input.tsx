@@ -2,18 +2,18 @@ import React from 'react';
 import './Input.scss'
 
 type InputProps = {
-    inputClass?: string
-    inputType?: string
-    inputPlaceholder?: string
-    inputOnChange?: any
-    inputName?: string
-    inputGeneralDiv?: string
+    className?: string  //inputClass
+    type?: string  //inputType
+    placeholder?: string  //inputPlaceholder
+    onChange?: any  //inputOnChange
+    inputName?: string  //inputName
+    generalDiv?: string  //inputGeneralDiv
 }
 
-export const Input = (({inputClass, inputType, inputPlaceholder, inputOnChange, inputName, inputGeneralDiv}: InputProps) => {
+export const Input = ({className, type, placeholder, onChange, inputName, generalDiv}: InputProps) => {
 
-    return <div className={inputGeneralDiv}>
+    return <div className={generalDiv}>
         {inputName && <p className='input__p'>{inputName}</p>}
-        <input className={inputClass} onChange={inputOnChange} type={inputType} placeholder={inputPlaceholder}/>
+        <input className={className} onChange={onChange} type={type} placeholder={placeholder}/>
     </div>
-})
+}

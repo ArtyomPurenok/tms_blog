@@ -2,23 +2,23 @@ import React from 'react';
 import './Button.scss';
 
 type buttonProps = {
-    btnClass?: string
-    functionLikeNumber?: any
-    BtnIcon?: any
+    className?: string  //btnClass
+    onClick?: any  //functionLikeNumber
+    Icon?: any //BtnIcon
     likeNumber?: number
-    btnTxt?: string
-    btnDivClass?: any
+    txt?: string  //btnTxt
+    divClass?: string
 }
 
-export const Button = (({btnClass, functionLikeNumber, BtnIcon, likeNumber, btnTxt, btnDivClass}: buttonProps) => {
-    return <div className={btnDivClass}>
-        <button 
-        onClick={functionLikeNumber}
-        className={btnClass}
-        >
-            {btnTxt}
-            {BtnIcon && <BtnIcon height='100%'/>}
-            {likeNumber}
+export const Button = ({className, onClick, Icon, txt, divClass}: buttonProps) => {
+    return <div className={divClass}>
+
+        <button onClick={onClick} className={className}>
+
+            {Icon && <Icon height='100%'/>}
+            {txt}
+            
         </button>
+
     </div>
-})
+}

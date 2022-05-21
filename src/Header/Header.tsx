@@ -41,19 +41,17 @@ export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
 
     return <div>
         <div className='header'>
-        <div className='header__left'>
-            <Button btnClass={'header__btn-burger'} BtnIcon={menuIcon()} functionLikeNumber={Burger}/>
-            <hr className='header__hr'/>
+            <div className='header__left'>
+                <Button className={'header__btn-menu'} Icon={menuIcon()} onClick={Burger}/>
+            </div>
+
+            <div className='header__right'>
+                <Button className={'header__btn-seach'} Icon={SearchIcon}/>
+                {headerUser && <Button className={'header__btn-user-name'} txt={headerUser}/>}
+                {headerUserIcon && <Button className={'header__user-icon'} Icon={headerUserIcon}/>}
+            </div>
         </div>
-        <div className='header__right'>
-            <hr className='header-hr'/>
-            <Button btnClass={'header__btn-seach'} BtnIcon={SearchIcon}/>
-            <hr className='header__hr'/>
-            {headerUser && <Button btnClass={'header__btn-user-name'} btnTxt={headerUser}/>}
-            {headerUserIcon && <Button btnClass={'header__user-icon'} BtnIcon={headerUserIcon}/>}
-            
-        </div>
-        </div>
+
         <HeaderBurger typeDisplay={displayBurger}/>
     </div>
 }
