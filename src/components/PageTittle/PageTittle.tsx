@@ -1,5 +1,6 @@
 import React from "react";
-import './PageTittle.scss'
+import './PageTittle.scss';
+import {Link} from 'react-router-dom';
 
 type PageTitleProps = {
     pageTitleComeHome?: string
@@ -10,7 +11,7 @@ type PageTitleProps = {
 export const PageTittle = ({pageTitleComeHome, pageTitleTxt, pageTitleGeneralDiv}:PageTitleProps ) => {
     return <div className={`page-title ${pageTitleGeneralDiv}`}>
 
-             {pageTitleComeHome && <p className="page-title__comeHome">{pageTitleComeHome}</p>}
+             {pageTitleComeHome && <a href="/" className="page-title__comeHome">{pageTitleComeHome}</a>}
              <h1 className="page-title__txt">{pageTitleTxt}</h1>
 
            </div>
