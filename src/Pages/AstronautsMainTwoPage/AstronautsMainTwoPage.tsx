@@ -79,7 +79,6 @@ const AstronautsTwoDataServer: DateServer[] = [
 ];
 
 export const DataServer = React.createContext(AstronautsTwoDataServer);
-console.log(DataServer)
 export const AstronautsMainTwoPage = () => {
 
     return <div className="astronauts-main-two-page">
