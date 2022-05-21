@@ -39,7 +39,7 @@ export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
     }
 
 
-    return <div>
+    return <div className='general-header-div'>
         <div className='header'>
             <div className='header__left'>
                 <Button className={'header__btn-menu'} Icon={menuIcon()} onClick={Burger}/>

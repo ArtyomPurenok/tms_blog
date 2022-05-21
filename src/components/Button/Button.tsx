@@ -5,8 +5,7 @@ type buttonProps = {
     className?: string  //btnClass
     onClick?: any  //functionLikeNumber
     Icon?: any //BtnIcon
-    likeNumber?: number
-    txt?: string  //btnTxt
+    txt?: string | number  //btnTxt
     divClass?: string
 }
 

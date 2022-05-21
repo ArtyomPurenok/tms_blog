@@ -1,3 +1,10 @@
+@import '../../../Style/Style';
+
+.astronauts-two-all-card-general-div{
+    width: $stGeneralDiv;
+    margin: 0 auto;
+}
+
 .astronauts-two-all-card-box {
     display: flex;
 }

@@ -8,6 +8,5 @@ export const AstronautsTwoBigCards = () => {
 
     return <div className="astronauts-two-big-cards">
         <ArrBigCards/>
-
     </div>
 }

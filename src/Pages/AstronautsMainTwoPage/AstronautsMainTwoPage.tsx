@@ -4,7 +4,6 @@ import './AstronautsMainTwoPage.scss';
 import {AstronautsTwoAllCardBox} from './AstronautsTwoAllCardBox';
 import {Header} from '../../Header';
 import {Footer} from '../../Footer';
-import {PageTittle} from '../../components/PageTittle';
 
 
 type DateServer = {
@@ -84,7 +83,6 @@ export const AstronautsMainTwoPage = () => {
     return <div className="astronauts-main-two-page">
         <DataServer.Provider value={AstronautsTwoDataServer}>
         <Header/>
-        <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-two-page__page-tittle'/>
         <AstronautsTwoAllCardBox/>
         <Footer/>
         </DataServer.Provider>

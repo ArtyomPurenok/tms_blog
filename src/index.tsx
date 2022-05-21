@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Routes, Route, Router} from 'react-router-dom';
-import {AddPost} from './router/AddPost/addPost';
-import {Post} from './router/post';
-import {Posts} from './router/posts';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+import {AstronautsMainTwoPage} from './Pages/AstronautsMainTwoPage';
+import {SignIn} from './Pages/SignIn';
 import {Search} from './router/search';
 
-import { LikeBox } from './components/LikeBox';
 
 
 const root = ReactDOM.createRoot(
@@ -20,10 +19,8 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<App/>}/>
-      <Route path='/posts/testStar' element={<Posts/>}/>
-      <Route path='/LikeBox' element={<LikeBox/>}/>
-      <Route path='/posts/:id' element={<Post/>}/>
-      <Route path='/search' element={<Search/>}/>
+      <Route path='/secondPage' element={<AstronautsMainTwoPage/>}/>
+      <Route path='/signIn' element={<SignIn/>}/>
       <Route
       path='*'
       element={

@@ -10,13 +10,14 @@ type IBoxWithAstronautsCardsProps = {
 }
 
 export const BoxWithAstronautsCards = ({dataServer}: IBoxWithAstronautsCardsProps) => {
-    return <div className="asd">
+    return <div className="box-with-astronauts-cards-general-div">
+
         <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-page__tittle'/>
+
         <div className="box-with-astronauts-cards">
             <AstronautsCenterPosts dataServer={dataServer}/>
             <AstronautsLittlePosts dataServer={dataServer}/>
         </div>
-
 
     </div>
 }

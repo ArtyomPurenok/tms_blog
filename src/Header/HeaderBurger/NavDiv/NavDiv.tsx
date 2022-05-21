@@ -6,7 +6,8 @@ import {ButtonForNav} from '../../../components/Button/ButtonForNav';
 
 export const NavDiv = () => {
     return <div>
-        <ButtonForNav txt='LikeBox' route='/LikeBox'/>
-        <ButtonForNav txt='Search' route='/search'/>
+        <ButtonForNav txt='Home' route='/'/>
+        <ButtonForNav txt='Two Main' route='/secondPage'/>
+        <ButtonForNav txt='SignIn' route='/signIn'/>
     </div>
 }
