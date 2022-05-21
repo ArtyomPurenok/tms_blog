@@ -2,18 +2,34 @@
     display: flex;
 }
 
+//color styles
+$stBackgroundColor: rgba(34, 49, 170, 1);
+$stBackgroundColorBorder: rgba(83, 96, 205, 1);
+$txtColor: rgba(141, 142, 151, 1);
+$titleColor: rgba(49, 48, 55, 1);
+
+
 //stile for card TXT
-$stColorLightGray: rgba(141, 142, 151, 1);
-$stColor: rgba(49, 48, 55, 1);
 $stdateFS: 15px;
 $stTitleFS: 19px;
 
+//style for center div
+$stCenterDivCards: 600px;
 
-//style for Average cords
-$stCardAverageWD: 340px;
-$stCardAverageHG: 386px;
+
+//style for average/big cards
+$stBigCardWD: 600px;
+$stCardAverageWD: 280px;
+
+$stAllCardHG: 386px;
 $stCardAverageMargin-bottom: 13px;
 
-////style for Average cords
-$stCardSmallWD: 370px;
+////style for small cards
+$stCardSmallWD: 350px;
 $stCardSmallHG: 137px;
+
+$stCardSmallImgWD: 120px;
+$stCardSmallImgHG: 90px;
+
+//style for general giv
+$stGeneralDiv: 1000px

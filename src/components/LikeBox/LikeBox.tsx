@@ -7,7 +7,7 @@ import {Bookmark} from './Bookmark'
 import {DotsThree} from './DotsThree'
 
 
-export const LikeBox = (() => {
+export const LikeBox = () => {
     const [likeNumber, setLikeNumber] = useState(0)
 
     const FunLikeNumber = (() => setLikeNumber(likeNumber + 1))
@@ -26,4 +26,4 @@ export const LikeBox = (() => {
         </div>        
         
     </div>
-})
+}

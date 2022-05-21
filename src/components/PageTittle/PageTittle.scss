@@ -2,14 +2,23 @@
 
 .page-title {
     height: 100px;
-    color: $stColor;
+    color: $titleColor;
+    margin-top: 70px;
 
     &__comeHome {
         font-size: 12px;
+        text-decoration: none;
+        color: $titleColor;
+        font-weight: 600;
+
+        &:hover {
+            color: blue;
+        }
     }
 
     &__txt {
         font-size: 40px;
+        margin: 0;
     }
 }
 
