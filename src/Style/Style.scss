@@ -2,12 +2,14 @@
     display: flex;
 }
 
-//background-colors
-$BlueBackground: rgba(34, 49, 170, 1);
-
-//stile for card txt
+//color styles
+$stBackgroundColor: rgba(34, 49, 170, 1);
+$stBackgroundColorBorder: rgba(83, 96, 205, 1);
 $txtColor: rgba(141, 142, 151, 1);
 $titleColor: rgba(49, 48, 55, 1);
+
+
+//stile for card TXT
 $stdateFS: 15px;
 $stTitleFS: 19px;
 

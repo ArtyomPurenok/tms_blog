@@ -7,15 +7,18 @@ type buttonProps = {
     Icon?: any //BtnIcon
     likeNumber?: number
     txt?: string  //btnTxt
+    divClass?: string
 }
 
-export const Button = ({className, onClick, Icon, txt}: buttonProps) => {
-    return <div>
+export const Button = ({className, onClick, Icon, txt, divClass}: buttonProps) => {
+    return <div className={divClass}>
+
         <button onClick={onClick} className={className}>
 
             {Icon && <Icon height='100%'/>}
             {txt}
             
         </button>
+
     </div>
 }
