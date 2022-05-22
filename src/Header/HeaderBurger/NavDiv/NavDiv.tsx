@@ -9,5 +9,6 @@ export const NavDiv = () => {
         <ButtonForNav txt='Home' route='/'/>
         <ButtonForNav txt='Two Main' route='/secondPage'/>
         <ButtonForNav txt='SignIn' route='/signIn'/>
+        <ButtonForNav txt='SignUp' route='/signUp'/>
     </div>
 }

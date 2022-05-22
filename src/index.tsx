@@ -7,7 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import {AstronautsMainTwoPage} from './Pages/AstronautsMainTwoPage';
 import {SignIn} from './Pages/SignIn';
-import {Search} from './router/search';
+import {SignUp} from './Pages/SignUp';
 
 
 
@@ -21,6 +21,7 @@ root.render(
       <Route path='/' element={<App/>}/>
       <Route path='/secondPage' element={<AstronautsMainTwoPage/>}/>
       <Route path='/signIn' element={<SignIn/>}/>
+      <Route path='/signUp' element={<SignUp/>}/>
       <Route
       path='*'
       element={

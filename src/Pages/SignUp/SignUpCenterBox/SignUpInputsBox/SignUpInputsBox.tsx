@@ -1,7 +1,7 @@
 import React from "react";
 import './SignUpInputsBox.scss';
 
-import {Input} from '../../../../components/Input'
+import {Input} from '../../../../components/Input';
 
 export const SignUpInputsBox = () => {
     function form(event: any) {
