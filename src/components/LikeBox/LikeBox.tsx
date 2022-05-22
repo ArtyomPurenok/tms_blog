@@ -1,27 +1,41 @@
 import React, {useState} from 'react';
-import './LikeBox.scss'
+import './LikeBox.scss';
+import { useDispatch, useSelector } from "react-redux";
+import {stateBookmark} from '../../redux/reducer/PostServer';
 
 import {LikeUp} from './LikeUp'
 import {LikeDown} from './LikeDown'
 import {Bookmark} from './Bookmark'
 import {DotsThree} from './DotsThree'
 
+type propsq = {
+    id?: any
+}
 
-export const LikeBox = () => {
+export const LikeBox = ({id}: propsq) => {
+
     const [likeNumber, setLikeNumber] = useState(0)
-
     const FunLikeNumber = (() => setLikeNumber(likeNumber + 1))
+    
+    const dispatch = useDispatch();
+    const click = (() => dispatch(stateBookmark(id)))
 
 
+    //test function
+    const test = useSelector((state: any) => state.value);
+    const qwe = () => {
+        console.table(test)
+    }
+    
     return <div className='like-box'>
 
         <div className='like-box__left'>
-            <LikeUp functionLikeNumber={FunLikeNumber}  likeNumber={likeNumber}/>
+            <LikeUp functionLikeNumber={qwe}  likeNumber={likeNumber}/>
             <LikeDown/>
         </div>
 
         <div className='like-box__right'>
-            <Bookmark/>
+            <Bookmark id={id} onClick={click}/>
             <DotsThree/>
         </div>        
         

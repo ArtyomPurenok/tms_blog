@@ -5,11 +5,14 @@ import {Button} from '../../Button'
 
 import { ReactComponent as BookmarkIcon } from '../../Icons/BookmarkIcon.svg'
 
+type propsa = {
+    id?: number
+    onClick: any
+}
 
-
-export const Bookmark = () => {
+export const Bookmark = ({id, onClick}: propsa) => {
 
     return <div>
-        <Button Icon={BookmarkIcon} className='bookmark__btn'/>
+        <Button Icon={BookmarkIcon} txt={id} className='bookmark__btn' onClick={onClick}/>
     </div>
 }
