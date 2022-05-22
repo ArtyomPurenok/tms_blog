@@ -10,7 +10,7 @@ type HeaderBurgerProps = {
 export const HeaderBurger = ({typeDisplay}: HeaderBurgerProps) => {
     return <div className="header-burger" style={{display: typeDisplay}}>
         <div className="header-burger__nav-fun--divs">
-            <NavDiv/>
+            {/* <NavDiv/> */}
             <FunctionDiv/>
         </div>
 
