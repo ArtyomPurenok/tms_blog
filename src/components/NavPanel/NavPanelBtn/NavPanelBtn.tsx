@@ -10,6 +10,5 @@ type PropsForBtn = {
 export const NavPanelBtn = ({name}: PropsForBtn) => {
     return <div className="nav-panel-btn">
         <Button btnClass='nav-panel-btn__btn' btnTxt={name}/>
-        <hr className="nav-panel-btn__hr"/>
     </div>
 }
