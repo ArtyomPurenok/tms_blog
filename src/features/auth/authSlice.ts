@@ -24,7 +24,7 @@ export const themeSlice = createSlice({
     name: 'auth',
     initialState,
     reducers: {
-        signUp: (state, action: PayloadAction<string>) => {
+        signUp: (state, action: PayloadAction<SignUpPayload>) => {
             state.user = action.payload
         },
     },

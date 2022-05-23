@@ -22,7 +22,6 @@ function App() {
     } ,1000)
   } ,[])
 
-  console.log(posts)
 
 
 
@@ -31,22 +30,28 @@ function App() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
 
-const onNameChange = (event: any) => {
+const onNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   setName(event.target.value)
 }
 
-const onEmailChange = (event: any) => {
+const onEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   setEmail(event.target.value)
 }
 
-const onPasswordChange = (event: any) => {
+const onPasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   setPassword(event.target.value)
 }
 
-const onConfirmPasswordChange = (event: any) => {
+const onConfirmPasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   setConfirmPassword(event.target.value)
 }
 
+const sumbutForm = (event: any) => {
+  event.preventDefault()
+  const formData = {name, email, password, confirmPassword}
+  dispatch(signUp(formData))
+  console.log(formData)
+}
 
   return (
     <div className="App">
@@ -56,7 +61,7 @@ const onConfirmPasswordChange = (event: any) => {
       <input title="Email" value={email} onChange={onEmailChange}/>
       <input type='password' title="Password" value={password} onChange={onPasswordChange}/>
       <input type='password' title="Confirm password" value={confirmPassword} onChange={onConfirmPasswordChange}/>
-      <button name='Primary' className='Primary'>SignUp</button>
+      <button name='Primary' onClick={sumbutForm} className='Primary'>SignUp</button>
       </form>
     </div>
   );
