@@ -11,9 +11,9 @@ import {signUp} from './features/auth';
 function App() {
   
   const {theme, toggleTheme} = useTheme()
-  const {posts, onLikePost, onDislikePost} = usePosts()
+  // const {posts, onLikePost, onDislikePost} = usePosts()
 
-  // const posts = useAppSelector(state => state.posts.content)
+  const posts = useAppSelector(state => state.posts.content)
   const dispatch = useAppDispatch()
 
   useEffect(() => {
@@ -49,8 +49,8 @@ const onConfirmPasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => 
 const sumbutForm = (event: any) => {
   event.preventDefault()
   const formData = {name, email, password, confirmPassword}
-  dispatch(signUp(formData))
-  console.log(formData)
+  dispatch(signUp())
+  console.table(posts)
 }
 
   return (

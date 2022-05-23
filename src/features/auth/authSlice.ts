@@ -2,8 +2,10 @@ import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
 
 
-interface ThemeState {
+interface AuthState {
     user: any | null
+    isLoading: string
+    error: string | null
 }
 
 type User = {
@@ -16,21 +18,35 @@ type SignUpPayload = {
     password: string
 }
 
-const initialState: ThemeState = {
+const initialState: AuthState = {
     user: null,
+    isLoading: 'idle',
+    error: null,
 }
 
 export const themeSlice = createSlice({
     name: 'auth',
     initialState,
     reducers: {
-        signUp: (state, action: PayloadAction<SignUpPayload>) => {
-            state.user = action.payload
+        signUp: state => {
+            if (state.isLoading === 'idle') {
+                state.isLoading = 'pending'
+            }
+        },
+        signUpSuccess (state, action: any) {
+            if (state.isLoading === 'pending') {
+                state.isLoading = 'idle'
+                state.user = action.payload
+            }
+        },
+        signUpFailure (state, action: any) {
+                state.isLoading = 'idle'
+                state.error = action.payload
         },
     },
 })
 
 
-export const {signUp} = themeSlice.actions
+export const {signUpSuccess, signUp, signUpFailure} = themeSlice.actions
 
 export default themeSlice.reducer
