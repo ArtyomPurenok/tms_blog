@@ -13,16 +13,20 @@ type propsq = {
 }
 
 export const LikeBox = ({id}: propsq) => {
+    const test = useSelector((state: any) => state.posts.value);
 
     const [likeNumber, setLikeNumber] = useState(0)
     const FunLikeNumber = (() => setLikeNumber(likeNumber + 1))
     
     const dispatch = useDispatch();
-    const click = (() => dispatch(stateBookmark(id)))
+    const click = () => {
+        dispatch(stateBookmark(id))
+        console.log(test);
+        
+    }
 
 
     //test function
-    const test = useSelector((state: any) => state.value);
     const qwe = () => {
         console.table(test)
     }

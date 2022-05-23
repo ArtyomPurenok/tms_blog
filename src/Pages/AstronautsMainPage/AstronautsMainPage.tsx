@@ -144,7 +144,7 @@ export const AstronautsMainPage = () => {
 
     const dispatch = useDispatch();
     dispatch(addContent(postsFromServer));
-    const dataCards = useSelector((state: any) => state.value);
+    const dataCards = useSelector((state: any) => state.posts.value);
 
 
 

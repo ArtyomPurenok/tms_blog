@@ -4,5 +4,7 @@ import PostsReduser from './reducer/PostServer'
 
 
 export const store = configureStore({
-    reducer: PostsReduser,
+    reducer: {
+        posts: PostsReduser,
+    }
 })
