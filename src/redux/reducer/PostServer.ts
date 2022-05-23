@@ -22,7 +22,7 @@ const initialState: IPostsState = {
 
 
 const PostsReduser = createSlice({
-    name:'Posts',
+    name:'posts',
     initialState,
     reducers: {
         addContent: (state, action: PayloadAction<Array<Post>>) => {
