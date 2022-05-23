@@ -1,5 +1,5 @@
 import React from "react";
-import './NavPanelBtn.scss';
+import './NavPanelContent.scss';
 
 
 
@@ -13,11 +13,4 @@ export const NavPanelContent = ({content}: PropsForBtn) => {
             <div>{content}</div> 
 
         </div>
-
-
-
-
-    // return <div className="nav-panel-btn">
-    //     <Button btnClass='nav-panel-btn__btn' btnTxt={name}/>
-    // </div>
 }

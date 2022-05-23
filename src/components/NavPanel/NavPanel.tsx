@@ -5,9 +5,9 @@ import {NavPanelContent} from './NavPanelContent';
 
 
 const contentBtnNavPanel = [
-    { nameBtn: 'All', content: 'London is the capital city of England.' },
-    { nameBtn: 'My favorites', content: 'Paris is the capital of France.' },
-    { nameBtn: 'Popular', content: 'Tokyo is the capital of Japan.' },
+    { nameBtn: 'All', content: 'All txt' },
+    { nameBtn: 'My favorites', content: 'My favorites txt' },
+    { nameBtn: 'Popular', content: 'Popular txt' },
   ];
 
 
