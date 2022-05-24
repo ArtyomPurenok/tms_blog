@@ -143,7 +143,10 @@ const postsFromServer: IPostsFromServer[] = [
 export const AstronautsMainPage = () => {
 
     const dispatch = useDispatch();
-    dispatch(addContent(postsFromServer));
+    useEffect(() => {
+        dispatch(addContent(postsFromServer));
+    }, [])
+    
     const dataCards = useSelector((state: any) => state.value);
 
 

@@ -30,7 +30,7 @@ const PostsReduser = createSlice({
         },
         stateBookmark: (state, action: PayloadAction<number>) => {
             if(state.value) {
-                state.value = state.value.map(el => el.id === action.payload ? {...el, like: true}: el)
+                state.value = state.value.map(el => el.id === action.payload ? {...el, Bookmark: !el.Bookmark}: el)
             }
         },
         
