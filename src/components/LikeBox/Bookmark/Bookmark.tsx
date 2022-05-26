@@ -10,16 +10,14 @@ import { ReactComponent as BookmarkIcon } from '../../Icons/BookmarkIcon.svg'
 type propsa = {
     id?: number
     onClick: any
+    active?: any
 }
 
-export const Bookmark = ({id, onClick}: propsa) => {
+export const Bookmark = ({id, onClick, active}: propsa) => {
     const dataCards = useSelector((state: any) => state.value);
-
-    const [styleBookmark, setStyleBookmark] = useState(0)
-    // if (dataCards)
 
 
     return <div>
-        <Button Icon={BookmarkIcon} className='bookmark__btn' onClick={onClick}/>
+        <Button Icon={BookmarkIcon} className={`bookmark bookmark__${active}`} onClick={onClick}/>
     </div>
 }

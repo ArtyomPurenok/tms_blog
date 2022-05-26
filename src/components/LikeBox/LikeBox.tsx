@@ -10,9 +10,10 @@ import {DotsThree} from './DotsThree'
 
 type propsq = {
     id?: any
+    bookmarkStyle?: any
 }
 
-export const LikeBox = ({id}: propsq) => {
+export const LikeBox = ({id, bookmarkStyle}: propsq) => {
     const dispatch = useDispatch();
     const test = useSelector((state: any) => state.value);  //function test
 
@@ -24,26 +25,25 @@ export const LikeBox = ({id}: propsq) => {
 
 
     const stateBookmarkFunction = () => {
-        // dispatch(stateBookmark(id))
-        qwe()
-        setTimeout(() => {dispatch(stateBookmark(id))}, 1000)
+        dispatch(stateBookmark(id))
+        // setStyleBookmark(styleBookmark + 5)
+        console.log(test[0].Bookmark)
+        console.log(bookmarkStyle)
+
+
+        // setTimeout(() => {dispatch(stateBookmark(id))}, 1000)
     }
 
-    //test function
-    const qwe = () => {
-        console.log(styleBookmark)
-        setStyleBookmark(styleBookmark+5)
-    }
-    
+
     return <div className='like-box'>
 
         <div className='like-box__left'>
-            <LikeUp functionLikeNumber={qwe}  likeNumber={likeNumber}/>
+            <LikeUp  likeNumber={likeNumber}/>
             <LikeDown/>
         </div>
 
         <div className='like-box__right'>
-            <Bookmark onClick={stateBookmarkFunction}/>
+            <Bookmark onClick={stateBookmarkFunction} active={bookmarkStyle}/>
             <DotsThree/>
         </div>        
         
