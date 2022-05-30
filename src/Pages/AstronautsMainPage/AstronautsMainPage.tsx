@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
 import './AstronautsMainPage.scss';
 import { useDispatch, useSelector } from "react-redux";
-import {addContent} from '../../redux/reducer/PostServer';
-import { type Post} from '../../redux/reducer/PostServer';
+import {addContent} from '../../redux/reducer/NOActivePostServer';
+import { type Post} from '../../redux/reducer/NOActivePostServer';
 import {featchData} from '../../thunkAction/AddPost';
 
 import {BoxWithAstronautsCards} from './BoxWithAstronautsCards';

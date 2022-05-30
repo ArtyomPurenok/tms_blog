@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './LikeBox.scss';
 import { useDispatch, useSelector } from "react-redux";
-import {stateBookmark} from '../../redux/reducer/PostServer';
+import {stateBookmark} from '../../redux/reducer/NOActivePostServer';
 
 import {LikeUp} from './LikeUp'
 import {LikeDown} from './LikeDown'

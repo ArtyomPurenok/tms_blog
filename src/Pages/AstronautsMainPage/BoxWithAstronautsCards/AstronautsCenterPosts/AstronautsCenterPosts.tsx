@@ -4,7 +4,7 @@ import './AstronautsCenterPosts.scss';
 import {Card} from '../../../../components/Card';
 import {LikeBox} from '../../../../components/LikeBox';
 import {LineButtom} from '../../../../components/LineButtom';
-import { type Post} from '../../../../redux/reducer/PostServer';
+import { type Post} from '../../../../redux/reducer/NOActivePostServer';
 import { useSelector } from "react-redux";
 
 type CenterPostsProps = {

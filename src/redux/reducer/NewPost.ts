@@ -1,9 +1,27 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { featchData } from "../../thunkAction/AddPost";
 
+interface IResults {
+    id: number
+    image: string
+    text: string
+    date: string
+    lesson_num: number
+    title: string
+    author: number
+    like?: boolean
+    dislike?: boolean
+    bookmark?: boolean
+}
 
+type Post = {
+    count: number,
+    next: string,
+    previous: boolean,
+    results: IResults
+}
 interface IPostsState {
-    data: any
+    data: Post | null
     isLoading: boolean
 }
 
@@ -17,14 +35,14 @@ const NewPostsReduser: any = createSlice({
     initialState,
     reducers: {},
     extraReducers: {
-        [featchData.pending]: (state: any) => {
+        [featchData.pending]: (state: IPostsState) => {
             state.isLoading = true;
         },
-        [featchData.fulfilled]: (state: any, action: any) => {
+        [featchData.fulfilled]: (state: IPostsState, action: PayloadAction<Post>) => {
             state.data = action.payload;
             state.isLoading = false;
         },
-        [featchData.rejected]: (state: any) => {
+        [featchData.rejected]: (state: IPostsState) => {
             state.isLoading = false;
         },
     },
