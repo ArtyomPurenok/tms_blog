@@ -8,6 +8,6 @@ import stateTabs from '../../src/redux/reducer/StateTabs';
 export const store = configureStore({
     reducer: {
         data: NewPostsReduser,
-        stateTabs: stateTabs,
+        tabs: stateTabs,
     }
 })

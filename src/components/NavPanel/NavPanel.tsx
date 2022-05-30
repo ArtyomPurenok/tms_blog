@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { tabsValue } from "../../redux/reducer/StateTabs";
 import './NavPanel.scss';
 
 import {NavPanelContent} from './NavPanelContent';
@@ -11,9 +13,19 @@ type Content = {
 
 
 export const NavPanel = ({Content}: Content) => {
-
+  const state = useSelector((state: any) => state.tabs);
   const [ active, setActive ] = React.useState(0);
-  const openTab = (e: any) => setActive(e.target.dataset.index);
+
+  useEffect(() => {
+    console.log(state.state)
+    setActive(state.state)
+  }, [state])
+
+
+  const dispatch = useDispatch();
+
+
+  const openTab = (e: any) => dispatch(tabsValue(e.target.dataset.index));
 
   const contentBtnNavPanel = [
     { nameBtn: 'All', content: <Content/> },
