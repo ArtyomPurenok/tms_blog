@@ -14,36 +14,21 @@ type propsq = {
 }
 
 export const LikeBox = ({id, bookmarkStyle}: propsq) => {
-    const dispatch = useDispatch();
-    const test = useSelector((state: any) => state.value);  //function test
 
-    const [likeNumber, setLikeNumber] = useState(0)
-    const FunLikeNumber = (() => setLikeNumber(likeNumber + 1))  //временно отключена
+    // const [likeNumber, setLikeNumber] = useState(0)
+    // const FunLikeNumber = (() => setLikeNumber(likeNumber + 1))  //временно отключена
 
-    const [styleBookmark, setStyleBookmark] = useState(0) //времменно не работает
-
-
-
-    const stateBookmarkFunction = () => {
-        dispatch(stateBookmark(id))
-        // setStyleBookmark(styleBookmark + 5)
-        console.log(test[0].Bookmark)
-        console.log(bookmarkStyle)
-
-
-        // setTimeout(() => {dispatch(stateBookmark(id))}, 1000)
-    }
 
 
     return <div className='like-box'>
 
         <div className='like-box__left'>
-            <LikeUp  likeNumber={likeNumber}/>
+            <LikeUp/>
             <LikeDown/>
         </div>
 
         <div className='like-box__right'>
-            <Bookmark onClick={stateBookmarkFunction} active={bookmarkStyle}/>
+            <Bookmark active={bookmarkStyle}/>
             <DotsThree/>
         </div>        
         

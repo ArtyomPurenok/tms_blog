@@ -2,24 +2,15 @@ import React, {useEffect} from "react";
 import './AstronautsMainPage.scss';
 import { useDispatch, useSelector } from "react-redux";
 import {addContent} from '../../redux/reducer/PostServer';
+import { type Post} from '../../redux/reducer/PostServer';
+import {featchData} from '../../thunkAction/AddPost';
 
 import {BoxWithAstronautsCards} from './BoxWithAstronautsCards';
 import {Header} from '../../Header';
 import {Footer} from '../../Footer';
 
-interface IPostsFromServer {
-    id: number,
-    data: string
-    h1: string
-    article?: string
-    img: string
-    type: string
-    like: boolean,
-    dislike: boolean,
-    Bookmark: boolean,
-};
 
-const postsFromServer: IPostsFromServer[] = [
+const postsFromServer: Array<Post> = [
     {
         id: 1,
         data: 'April 20, 2021',
@@ -141,14 +132,12 @@ const postsFromServer: IPostsFromServer[] = [
 
 
 export const AstronautsMainPage = () => {
-
+    const dataCards = useSelector((state: any) => state.data);
     const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(addContent(postsFromServer));
-    }, [])
-    
-    const dataCards = useSelector((state: any) => state.value);
 
+    useEffect(() => {
+            dispatch(featchData());
+    }, [])
 
 
     return <div className="astronauts-main-page">

@@ -4,15 +4,16 @@ import './AstronautsLittlePosts.scss';
 import {Card} from '../../../../components/Card';
 import {LikeBox} from '../../../../components/LikeBox';
 import {LineButtom} from '../../../../components/LineButtom';
+import { type Post} from '../../../../redux/reducer/PostServer';
 
 type LittlePostProps = {
-    dataServer: any
+    dataServer?: any
 }
 
 export const AstronautsLittlePosts = ({dataServer}: LittlePostProps) => {
-    let LittlePosts = dataServer?.slice(5).map((el: any, index: number) => {
+    let LittlePosts = dataServer.data?.results?.slice(5).map((el: any, index: number) => {
             return <div key={index}>
-                <Card cardClass="card-littele-post" cardImg={el.img} cardData={el.data} cardTitle={el.h1} cardTxtClass='card-littele-post__txt'/>
+                <Card cardClass="card-littele-post" cardImg={el.image} cardData={el.date} cardTitle={el.title} cardTxtClass='card-littele-post__txt'/>
                 <LikeBox id={el.id}/>
                 <LineButtom/>
                 </div>

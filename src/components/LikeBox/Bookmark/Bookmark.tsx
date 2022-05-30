@@ -9,7 +9,7 @@ import { ReactComponent as BookmarkIcon } from '../../Icons/BookmarkIcon.svg'
 
 type propsa = {
     id?: number
-    onClick: any
+    onClick?: any
     active?: any
 }
 

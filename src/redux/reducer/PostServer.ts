@@ -1,15 +1,15 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
-type Post = {
+ export type Post = {
     id: number,
     data: string
     h1: string
     article?: string
     img: string
     type: string
-    like: boolean,
-    dislike: boolean,
-    Bookmark: boolean,
+    like?: boolean,
+    dislike?: boolean,
+    Bookmark?: boolean,
 }
 
 interface IPostsState {

@@ -7,7 +7,7 @@ import {PageTittle} from '../../../components/PageTittle';
 import {NavPanel} from '../../../components/NavPanel';
 
 type IBoxWithAstronautsCardsProps = {
-    dataServer: any
+    dataServer?: any
 }
 
 

@@ -6,7 +6,7 @@ import {Button} from '../../Button'
 import { ReactComponent as LikeUpIcon } from '../../Icons/LikeUpIcon.svg'
 
 type LikeUpProps = {
-    likeNumber: number
+    likeNumber?: number
     onClick?: any
 }
 
