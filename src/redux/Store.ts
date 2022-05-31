@@ -1,12 +1,14 @@
 import {configureStore} from "@reduxjs/toolkit";
-import NewPostsReduser from '../../src/redux/reducer/NewPost';
+import newPostsReduser from '../../src/redux/reducer/NewPost';
 import stateTabs from '../../src/redux/reducer/StateTabs';
+import favorites from '../../src/redux/reducer/favorites';
 
 
 
 export const store = configureStore({
     reducer: {
-        data: NewPostsReduser,
+        data: newPostsReduser,
         tabs: stateTabs,
+        // stateFavorite: favorites,
     }
 })

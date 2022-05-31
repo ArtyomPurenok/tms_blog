@@ -17,7 +17,6 @@ export const NavPanel = ({Content}: Content) => {
   const [ active, setActive ] = React.useState(0);
 
   useEffect(() => {
-    console.log(state.state)
     setActive(state.state)
   }, [state])
 

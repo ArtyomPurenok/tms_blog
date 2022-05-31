@@ -11,10 +11,10 @@ type LittlePostProps = {
 }
 
 export const AstronautsLittlePosts = ({dataServer}: LittlePostProps) => {
-    let LittlePosts = dataServer.data?.results?.slice(5).map((el: any, index: number) => {
+    let LittlePosts = dataServer?.slice(5, 11).map((el: any, index: number) => {
             return <div key={index}>
                 <Card cardClass="card-littele-post" cardImg={el.image} cardData={el.date} cardTitle={el.title} cardTxtClass='card-littele-post__txt'/>
-                <LikeBox id={el.id}/>
+                <LikeBox id={el.id} bookmarkActive={el.bookmark} likeActive={el.like} dislikeActive={el.dislike}/>
                 <LineButtom/>
                 </div>
     })

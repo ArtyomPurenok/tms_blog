@@ -14,7 +14,7 @@ interface IResults {
     bookmark?: boolean
 }
 
-type Post = {
+export type Post = {
     count: number,
     next: string,
     previous: boolean,
@@ -22,23 +22,25 @@ type Post = {
 }
 interface IPostsState {
     data: Post | null
+    arrObject: any
     isLoading: boolean
 }
 
 const initialState: IPostsState = {
     data: null,
+    arrObject: null,
     isLoading: false
 }
 
-const NewPostsReduser: any = createSlice({
+const newPostsReduser: any = createSlice({
     name: 'New posts',
     initialState,
-    reducers: {},
     extraReducers: {
         [featchData.pending]: (state: IPostsState) => {
             state.isLoading = true;
         },
-        [featchData.fulfilled]: (state: IPostsState, action: PayloadAction<Post>) => {
+        [featchData.fulfilled]: (state: IPostsState, action: any) => {
+            state.arrObject = action.payload.results;
             state.data = action.payload;
             state.isLoading = false;
         },
@@ -46,7 +48,24 @@ const NewPostsReduser: any = createSlice({
             state.isLoading = false;
         },
     },
+    reducers: {
+        bookmark: (state: any, action: PayloadAction<number>) => {
+            if (state != null) {
+                state.arrObject = state.arrObject?.map((el: any) => el.id === action.payload ? {...el, bookmark: !el.bookmark}: el)
+            }
+        },
+        like: (state: any, action: PayloadAction<number>) => {
+            if (state != null) {
+                state.arrObject = state.arrObject?.map((el: any) => el.id === action.payload ? {...el, like: !el.like}: el)
+            }
+        },
+        dislike: (state: any, action: PayloadAction<number>) => {
+            if (state != null) {
+                state.arrObject = state.arrObject?.map((el: any) => el.id === action.payload ? {...el, dislike: !el.dislike}: el)
+            }
+        },
+    },
 })
 
-export const {addPostsArray} = NewPostsReduser.actions
-export default NewPostsReduser.reducer
+export const {addPostsArray, bookmark, like, dislike} = newPostsReduser.actions
+export default newPostsReduser.reducer
