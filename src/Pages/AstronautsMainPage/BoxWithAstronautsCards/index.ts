@@ -1,1 +1,0 @@
-export {BoxWithAstronautsCards} from './BoxWithAstronautsCards'

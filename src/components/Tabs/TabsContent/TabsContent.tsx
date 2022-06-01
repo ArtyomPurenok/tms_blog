@@ -1,5 +1,5 @@
 import React from "react";
-import './NavPanelContent.scss';
+import './TabsContent.scss';
 
 
 
@@ -7,7 +7,7 @@ type PropsForBtn = {
     content: any
 }
 
-export const NavPanelContent = ({content}: PropsForBtn) => {
+export const TabsContent = ({content}: PropsForBtn) => {
     return <div className="nav-panel-content">
 
             <div>{content}</div> 

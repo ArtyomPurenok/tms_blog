@@ -4,8 +4,8 @@ import './SignIn.scss'
 import {SignInCenterDiv} from './SignInCenterDiv'
 
 
-import {Header} from '../../Header';
-import {Footer} from '../../Footer';
+import {Header} from '../../components/Header';
+import {Footer} from '../../components/Footer';
 
 export const SignIn = () => {
     return <div className="sign-in">

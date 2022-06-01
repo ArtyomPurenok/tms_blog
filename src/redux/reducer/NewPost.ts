@@ -1,7 +1,7 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { featchData } from "../../thunkAction/AddPost";
 
-interface IResults {
+export interface IResults {
     id: number
     image: string
     text: string
@@ -20,7 +20,7 @@ export type Post = {
     previous: boolean,
     results: IResults
 }
-interface IPostsState {
+export interface IPostsState {
     data: Post | null
     arrObject: any
     isLoading: boolean
@@ -39,7 +39,7 @@ const newPostsReduser: any = createSlice({
         [featchData.pending]: (state: IPostsState) => {
             state.isLoading = true;
         },
-        [featchData.fulfilled]: (state: IPostsState, action: any) => {
+        [featchData.fulfilled]: (state: IPostsState, action: PayloadAction<Post>) => {
             state.arrObject = action.payload.results;
             state.data = action.payload;
             state.isLoading = false;
@@ -49,19 +49,19 @@ const newPostsReduser: any = createSlice({
         },
     },
     reducers: {
-        bookmark: (state: any, action: PayloadAction<number>) => {
+        bookmark: (state: IPostsState, action: PayloadAction<number>) => {
             if (state != null) {
-                state.arrObject = state.arrObject?.map((el: any) => el.id === action.payload ? {...el, bookmark: !el.bookmark}: el)
+                state.arrObject = state.arrObject?.map((el: IResults) => el.id === action.payload ? {...el, bookmark: !el.bookmark}: el)
             }
         },
-        like: (state: any, action: PayloadAction<number>) => {
+        like: (state: IPostsState, action: PayloadAction<number>) => {
             if (state != null) {
-                state.arrObject = state.arrObject?.map((el: any) => el.id === action.payload ? {...el, like: !el.like}: el)
+                state.arrObject = state.arrObject?.map((el: IResults) => el.id === action.payload ? {...el, like: !el.like}: el)
             }
         },
-        dislike: (state: any, action: PayloadAction<number>) => {
+        dislike: (state: IPostsState, action: PayloadAction<number>) => {
             if (state != null) {
-                state.arrObject = state.arrObject?.map((el: any) => el.id === action.payload ? {...el, dislike: !el.dislike}: el)
+                state.arrObject = state.arrObject?.map((el: IResults) => el.id === action.payload ? {...el, dislike: !el.dislike}: el)
             }
         },
     },

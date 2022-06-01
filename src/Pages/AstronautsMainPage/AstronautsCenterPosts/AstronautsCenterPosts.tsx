@@ -1,22 +1,19 @@
-import React, { useEffect } from "react";
-import './AstronautsCenterPosts.scss';
+import React, { useEffect } from "react"
+import './AstronautsCenterPosts.scss'
+import { useSelector } from "react-redux"
 
-import {Card} from '../../../../components/Card';
-import {LikeBox} from '../../../../components/LikeBox';
-import {LineButtom} from '../../../../components/LineButtom';
-import { type Post} from '../../../../redux/reducer/NOActivePostServer';
-import { useSelector } from "react-redux";
+import { type IResults} from '../../../redux/reducer/NewPost'
 
-type CenterPostsProps = {
-    dataServer?: any
-};
+import {Card} from '../../../components/Card'
+import {LikeBox} from '../../../components/LikeBox'
+import {LineButtom} from '../../../components/LineButtom'
 
 
 
-export const AstronautsCenterPosts = ({dataServer}:CenterPostsProps) => {
-    const dataCards = useSelector((state: any) => state.data);
+export const AstronautsCenterPosts = () => {
+    const dataCards = useSelector((state: any) => state.data);  
 
-    const CardLargeAverage = dataServer?.map((el: any, index: number) => {
+    const CardLargeAverage = dataCards?.arrObject?.map((el: IResults, index: number) => {
         if(index === 0) {
             return <div key={el.id}>
                 <Card cardClass="card-big-post" cardImg={el.image} cardData={el.date} cardTitle={el.title} cardArticle={el.text} cardTxtClass='card-big-post__txt'/>

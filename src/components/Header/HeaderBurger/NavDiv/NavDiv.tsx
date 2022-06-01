@@ -1,7 +1,7 @@
 import React from "react";
 import './NavDiv.scss';
 
-import {ButtonForNav} from '../../../components/Button/ButtonForNav';
+import {ButtonForNav} from '../../../Button/ButtonForNav';
 
 
 export const NavDiv = () => {

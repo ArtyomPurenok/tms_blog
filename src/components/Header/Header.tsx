@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Header.scss';
 
-import {Button} from '../components/Button';
+import {Button} from '../Button';
 import {HeaderBurger} from './HeaderBurger';
 
-import { ReactComponent as MenuIcon } from '../components/Icons/MenuIcon.svg';
-import { ReactComponent as SearchIcon } from '../components/Icons/Search.svg';
+import { ReactComponent as MenuIcon } from '../../components/Icons/MenuIcon.svg';
+import { ReactComponent as SearchIcon } from '../../components/Icons/Search.svg';
 import { ReactComponent as CancelIcon } from './components/HeaderIcon/CancelIcon.svg';
 
 type HeaderProps = {

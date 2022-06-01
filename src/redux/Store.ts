@@ -1,7 +1,7 @@
 import {configureStore} from "@reduxjs/toolkit";
 import newPostsReduser from '../../src/redux/reducer/NewPost';
 import stateTabs from '../../src/redux/reducer/StateTabs';
-import favorites from '../../src/redux/reducer/favorites';
+
 
 
 

@@ -1,11 +1,12 @@
-import React, {useEffect} from "react";
-import './AstronautsMainPage.scss';
-import { useDispatch, useSelector } from "react-redux";
-import {featchData} from '../../thunkAction/AddPost';
+import React, {useEffect} from "react"
+import './AstronautsMainPage.scss'
+import { useDispatch, useSelector } from "react-redux"
+import {featchData} from '../../thunkAction/AddPost'
 
-import {BoxWithAstronautsCards} from './BoxWithAstronautsCards';
-import {Header} from '../../Header';
-import {Footer} from '../../Footer';
+import {Header} from '../../components/Header'
+import {Footer} from '../../components/Footer'
+import {PageTittle} from '../../components/PageTittle'
+import {Tabs} from '../../components/Tabs'
 
 
 // const postsFromServer: Array<Post> = [
@@ -134,7 +135,9 @@ export const AstronautsMainPage = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
+        if(dataCards.data === null) {
             dispatch(featchData());
+        }
     }, [])
 
     function check() {
@@ -145,7 +148,12 @@ export const AstronautsMainPage = () => {
     return <div className="astronauts-main-page">
     <Header/>
     <button onClick={check}>asd</button>
-    <BoxWithAstronautsCards dataServer={dataCards.arrObject}/>
+
+    <div className="astronauts-main-page__center-div     box-with-astronauts-cards-general-div">
+        <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-page__tittle'/>
+        <Tabs/>
+    </div>
+
     <Footer/>
     
     </div>

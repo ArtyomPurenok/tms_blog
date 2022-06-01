@@ -1,7 +1,7 @@
 import React from "react";
 import './FunctionDiv.scss';
 
-import {Button} from '../../../components/Button';
+import {Button} from '../../../Button';
 import {ReactComponent as SunIcon} from '../../components/HeaderIcon/SunIcon.svg';
 import {ReactComponent as MoonIcon} from '../../components/HeaderIcon/MoonIcon.svg';
 

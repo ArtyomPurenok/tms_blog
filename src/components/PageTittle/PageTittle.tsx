@@ -1,6 +1,5 @@
 import React from "react";
 import './PageTittle.scss';
-import {Link} from 'react-router-dom';
 
 type PageTitleProps = {
     pageTitleComeHome?: string
