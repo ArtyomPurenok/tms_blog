@@ -11,6 +11,10 @@
     display: flex;
     flex-direction: row-reverse;
 
+    &__a {
+        text-decoration: none;
+    }
+
     img {
         width: $stCardSmallImgWD;
         height: $stCardSmallImgHG;

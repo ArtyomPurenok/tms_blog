@@ -67,5 +67,5 @@ const newPostsReduser: any = createSlice({
     },
 })
 
-export const {addPostsArray, bookmark, like, dislike} = newPostsReduser.actions
+export const {bookmark, like, dislike} = newPostsReduser.actions
 export default newPostsReduser.reducer

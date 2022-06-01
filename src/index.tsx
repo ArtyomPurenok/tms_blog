@@ -11,6 +11,7 @@ import { store } from "./redux/store";
 import {AstronautsMainTwoPage} from './Pages/AstronautsMainTwoPage';
 import {SignIn} from './Pages/SignIn';
 import {SignUp} from './Pages/SignUp';
+import {SinglePage} from './Pages/SinglePage'
 
 
 
@@ -26,6 +27,7 @@ root.render(
       <Route path='/secondPage' element={<AstronautsMainTwoPage/>}/>
       <Route path='/signIn' element={<SignIn/>}/>
       <Route path='/signUp' element={<SignUp/>}/>
+      <Route path='/posts/:id' element={<SinglePage/>}/>
       <Route
       path='*'
       element={

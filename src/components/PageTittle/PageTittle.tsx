@@ -3,7 +3,7 @@ import './PageTittle.scss';
 
 type PageTitleProps = {
     pageTitleComeHome?: string
-    pageTitleTxt: string
+    pageTitleTxt?: string
     pageTitleGeneralDiv?: string
 }
 
