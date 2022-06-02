@@ -140,14 +140,9 @@ export const AstronautsMainPage = () => {
         }
     }, [])
 
-    function check() {
-        console.table(dataCards.arrObject);
-        
-    }
 
     return <div className="astronauts-main-page">
     <Header/>
-    <button onClick={check}>asd</button>
 
     <div className="astronauts-main-page__center-div     box-with-astronauts-cards-general-div">
         <PageTittle pageTitleTxt='Blog' pageTitleGeneralDiv='astronauts-main-page__tittle'/>

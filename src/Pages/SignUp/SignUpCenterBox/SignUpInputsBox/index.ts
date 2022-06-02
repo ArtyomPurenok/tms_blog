@@ -1,1 +1,0 @@
-export {SignUpInputsBox} from './SignUpInputsBox'

@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import App from './App'
+import reportWebVitals from './reportWebVitals'
 
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import { Provider } from "react-redux";
-import { store } from "./redux/store";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { Provider } from "react-redux"
+import { store } from "./redux/store"
 
-import {AstronautsMainTwoPage} from './Pages/AstronautsMainTwoPage';
-import {SignIn} from './Pages/SignIn';
-import {SignUp} from './Pages/SignUp';
+import {AstronautsMainTwoPage} from './Pages/AstronautsMainTwoPage'
+import {SignIn} from './Pages/SignIn'
+import {SignUp} from './Pages/SignUp'
 import {SinglePage} from './Pages/SinglePage'
+import {Verify} from './Pages/Verify'
 
 
 
@@ -27,6 +28,7 @@ root.render(
       <Route path='/secondPage' element={<AstronautsMainTwoPage/>}/>
       <Route path='/signIn' element={<SignIn/>}/>
       <Route path='/signUp' element={<SignUp/>}/>
+      <Route path='/verify' element={<Verify/>}/>
       <Route path='/posts/:id' element={<SinglePage/>}/>
       <Route
       path='*'
