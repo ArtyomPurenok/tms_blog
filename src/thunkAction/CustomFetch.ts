@@ -3,30 +3,29 @@ import jwtDecode from 'jwt-decode'
 
 
 
-export const customFetch: any  = createAsyncThunk (
+export const customFetch = createAsyncThunk (
     'Custom fetch',
-    async ({access, formData}: any) => {  
-        const parsedToken: any = jwtDecode(access);
+    async ({tokens, formData}: any) => {  
+        const parsedToken: any = jwtDecode(tokens.access);
 
         if (((parsedToken.exp * 1000) - Date.now()) < 0) {
-            const response = await fetch('https://studapi.teachmeskills.by/auth/jwt/create/', {
+            const response = await fetch('https://studapi.teachmeskills.by/auth/jwt/refresh/', {
                 method: "POST",
-                body: JSON.stringify(formData),
+                body: JSON.stringify(tokens.access),
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json;charset=utf-8'
                 },
             });
-            const tokens = await response.json();
-            // console.log(tokens);         
+            const newAccess = await response.json();        
             
             if (response.ok) {
-                return tokens
+                return newAccess
             }
         }else {
             const response = await fetch('https://studapi.teachmeskills.by/auth/users/', {
                 headers: {
-                    Authorization: `Bearer ${access}`,
+                    Authorization: `Bearer ${tokens.access}`,
                 },
             });
             const userData = await response.json();
