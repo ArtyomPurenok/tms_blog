@@ -136,7 +136,7 @@ export const AstronautsMainPage = () => {
 
     useEffect(() => {
         if(dataCards.data === null) {
-            dispatch(featchData());
+            dispatch(featchData())
         }
     }, [])
 

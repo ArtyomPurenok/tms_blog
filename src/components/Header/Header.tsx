@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
-import './Header.scss';
+import React, { useEffect, useState } from 'react'
+import './Header.scss'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
-import {Button} from '../Button';
-import {HeaderBurger} from './HeaderBurger';
+import { ReactComponent as MenuIcon } from '../../components/Icons/MenuIcon.svg'
+import { ReactComponent as SearchIcon } from '../../components/Icons/Search.svg'
+import { ReactComponent as CancelIcon } from './components/HeaderIcon/CancelIcon.svg'
+import { ReactComponent as UserIcon } from './components/HeaderIcon/UserIcon.svg'
 
-import { ReactComponent as MenuIcon } from '../../components/Icons/MenuIcon.svg';
-import { ReactComponent as SearchIcon } from '../../components/Icons/Search.svg';
-import { ReactComponent as CancelIcon } from './components/HeaderIcon/CancelIcon.svg';
+import {Button} from '../Button'
+import {HeaderBurger} from './HeaderBurger'
+import { ButtonUser } from "../Button/ButtonUser"
+
 
 type HeaderProps = {
     headerUser?: string
     headerUserIcon?: string
-
 }
+
 
 export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
     const [stateBurger, setStateBurger] = useState('Close');
@@ -35,8 +40,22 @@ export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
         }else if(stateBurger === "Open") {
             return CancelIcon
         }
-
     }
+
+
+    //User
+    const [user, setUser] = useState('not');
+    const dataSignIn = useSelector((state: any) => state.signIn);
+    const navigate = useNavigate();
+    
+
+    useEffect(() => {
+        if (dataSignIn.userName != null) {           
+            setUser('ok')
+        }else {setUser('not')}
+    }, [dataSignIn.userName])
+
+    const registerUser = () => {navigate('/signIn')}
 
 
     return <div className='general-header-div'>
@@ -47,8 +66,8 @@ export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
 
             <div className='header__right'>
                 <Button className={'header__btn-seach'} Icon={SearchIcon}/>
-                {headerUser && <Button className={'header__btn-user-name'} txt={headerUser}/>}
-                {headerUserIcon && <Button className={'header__user-icon'} Icon={headerUserIcon}/>}
+                {user == 'ok' && <ButtonUser userName={dataSignIn.userName} className='header__btn-user'/>}
+                {user == 'not' && <Button className={'header__user-icon'} Icon={UserIcon} onClick={registerUser}/>}
             </div>
         </div>
 

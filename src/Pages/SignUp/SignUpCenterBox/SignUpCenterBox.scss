@@ -39,6 +39,10 @@
         border-color: rgba(34, 49, 170, 1);
         border-radius: 2px;
 
+        &:active  {
+            background-color: rgba(83, 96, 205, 1);
+        }
+
         &--txt {
             text-align: center;
             font-size: 11px;

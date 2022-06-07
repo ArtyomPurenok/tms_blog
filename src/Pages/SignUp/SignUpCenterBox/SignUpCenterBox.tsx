@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './SignUpCenterBox.scss';
 import { useDispatch, useSelector } from "react-redux";
 
@@ -6,11 +6,13 @@ import {PageTittle} from "../../../components/PageTittle";
 import { Input } from "../../../components/Input";
 import { Button } from "../../../components/Button";
 import { signUp } from "../../../thunkAction/SignUp";
+import { useNavigate } from "react-router-dom";
 
 
 export const SignUpCenterBox = () => {
     const dataSignUp = useSelector((state: any) => state.signUp);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -30,12 +32,18 @@ export const SignUpCenterBox = () => {
     setConfirmPassword(event.target.value)
     }
 
+    useEffect(() => {
+        if (dataSignUp.dataSignUp != null) {
+            navigate('/verify')
+        }
+    })
+
 
     const sumbutForm = (event: any) => {
         event.preventDefault()
         const formData = {username, email, password}
         dispatch(signUp(formData))
-        console.log(formData)
+        // console.log(formData)
         console.log(dataSignUp)
       }
 

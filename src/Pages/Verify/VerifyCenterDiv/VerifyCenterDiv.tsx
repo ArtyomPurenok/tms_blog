@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import './VerifyCenterDiv.scss'
 import { useDispatch, useSelector } from "react-redux"
 
@@ -6,12 +6,14 @@ import {PageTittle} from "../../../components/PageTittle"
 import { Input } from "../../../components/Input"
 import { Button } from "../../../components/Button"
 import { verify } from "../../../thunkAction/Verify";
+import { useNavigate } from "react-router-dom"
 
 
 export const VerifyCenterDiv = () => {
     
     const dataSignUp = useSelector((state: any) => state.verify);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const [uid, setUid] = useState('')
     const [token, setToken] = useState('')
@@ -23,12 +25,16 @@ export const VerifyCenterDiv = () => {
         setToken(event.target.value)
     } 
 
+    useEffect(() => {
+        if (dataSignUp.dataVerify == 'ok') {
+            navigate('/')
+        }
+    }, [dataSignUp])
+
     const  verifyForm = (event: any) => {
         event.preventDefault()
         const verifyData = {uid, token}
         dispatch(verify(verifyData))
-        console.log(verifyData)
-        console.log(dataSignUp)
       }
 
     return <div className="verify-center-div">

@@ -20,7 +20,7 @@ const verifyData = createSlice({
             state.isLoading = true;
         },
         [verify.fulfilled]: (state: any, action: PayloadAction<any>) => {
-            state.dataSignUp = action.payload;
+            state.dataVerify = action.payload;
             state.isLoading = false;
         },
         [verify.rejected]: (state: any) => {

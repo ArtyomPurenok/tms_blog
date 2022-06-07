@@ -25,6 +25,10 @@
         border: transparent;
         border-right: 1px solid $stBackgroundColorBorder;
 
+        &:active  {
+            background-color: rgba(83, 96, 205, 1);
+        }
+
     }
 
     &__btn-seach {
@@ -33,16 +37,10 @@
         background-color: $stBackgroundColor;
         border: transparent;
         border-left: 1px solid $stBackgroundColorBorder;
-    }
 
-    &__btn-user-name {
-        width: 200px;
-        height: 60px;
-        font-weight: 600;
-        background-color: $stBackgroundColor;
-        border: transparent;
-        color: white;
-        border-left: 1px solid $stBackgroundColorBorder;
+        &:active  {
+            background-color: rgba(83, 96, 205, 1);
+        }
     }
 
     &__user-icon {
@@ -51,6 +49,16 @@
         background-color: $stBackgroundColor;
         border: transparent;
         color: white;
+        border-left: 1px solid $stBackgroundColorBorder;
+        
+        &:active  {
+            background-color: rgba(83, 96, 205, 1);
+        }
+    }
+
+    &__btn-user {
+        width: 250px;
+        border: transparent;
         border-left: 1px solid $stBackgroundColorBorder;
     }
 }

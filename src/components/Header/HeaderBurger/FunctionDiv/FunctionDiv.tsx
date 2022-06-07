@@ -12,6 +12,6 @@ export const FunctionDiv = () => {
                 <Button className='function-div__btn-light' Icon={SunIcon} divClass='function-div__btn-div'/>
                 <Button className='function-div__btn-dark' Icon={MoonIcon} divClass='function-div__btn-div'/>
             </div>
-               <Button className='function-div__-logOut' txt='Log Out'/>
+               <Button className='function-div__logOut' txt='Log Out'/>
         </div>
 }
