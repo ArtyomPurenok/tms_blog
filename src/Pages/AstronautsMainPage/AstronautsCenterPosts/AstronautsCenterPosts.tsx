@@ -25,7 +25,7 @@ export const AstronautsCenterPosts = () => {
             </div>
         }
 
-        if (index === 1 || index ===  2 || index ===  3 || index ===  4) {
+        if (index > 0 && index < 5) {
             return <div key={el.id}>
                 <a className="card-post-link" key={el.id} href={`/posts/${el.id}`}>
                 <Card cardClass="card-middle-post" cardImg={el.image} cardData={el.date} cardTitle={el.title} cardArticle={el.text} cardTxtClass='card-middle-post__txt'/>

@@ -42,7 +42,7 @@ export const Tabs = ({Content, Favorites}: Content) => {
             {contentBtnTabs.map((el, index) => (
               <button
                 key={index}
-                className={`tabs__btn ${index === +(active) ? 'tabs__btn--active' : ''}`}
+                className={`tabs__btn ${index === active ? 'tabs__btn--active' : ''}`}
                 onClick={openTab}
                 data-index={index}
               >{el.nameBtn}</button>
