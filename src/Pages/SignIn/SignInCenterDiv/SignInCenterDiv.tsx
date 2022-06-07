@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import './SignInCenterDiv.scss';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import jwtDecode, { JwtPayload } from 'jwt-decode'
 
 import {PageTittle} from "../../../components/PageTittle";
 import { Input } from "../../../components/Input";
 import { Button } from "../../../components/Button";
 import { tokens } from "../../../thunkAction/Tokens";
 import { signInFetch } from "../../../thunkAction/signInFetch";
+// import { customFetch } from "../../../thunkAction/CustomFetch";    временно отключена (не удалять)
 
 
 
@@ -34,8 +36,11 @@ export const SignInCenterDiv = () => {
         console.log(formData);
       }
 
-      useEffect(() => {     
-        dispatch(signInFetch(dataTokens.access))
+      useEffect(() => {    
+          if (dataTokens.access) {            
+            dispatch(signInFetch(dataTokens.access))
+          }
+
       }, [dataTokens.access])
 
       useEffect(() => {
