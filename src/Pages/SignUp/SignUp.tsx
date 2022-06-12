@@ -12,8 +12,6 @@ export const SignUp = () => {
 
 
     return <div className="signUp">
-        <Header/>
         <SignUpCenterBox/>
-        <Footer/>
     </div>
 }

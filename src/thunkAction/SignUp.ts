@@ -1,10 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
 
-// type Data = {
-//     name: string
-//     email: string
-//     password: string
-// }
 
 export const signUp: any  = createAsyncThunk (
     'SignUP request',
@@ -18,7 +13,6 @@ export const signUp: any  = createAsyncThunk (
             },
         });
         const signUpData = await response.json();
-        console.log(signUpData);
 
         if (response.ok) {
             return signUpData

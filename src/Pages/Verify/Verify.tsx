@@ -9,11 +9,6 @@ import {Footer} from '../../components/Footer';
 
 export const Verify = () => {
     return <div className="verify">
-
-        <Header/>
-
-        <VerifyCenterDiv/>
-        <Footer/>
-        
+        <VerifyCenterDiv/>    
     </div>
 }

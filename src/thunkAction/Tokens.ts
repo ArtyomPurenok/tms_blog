@@ -4,7 +4,9 @@ import { createAsyncThunk } from '@reduxjs/toolkit'
 export const tokens: any  = createAsyncThunk (
     'Tokens request',
     async (formData: any) => {
+        
         try {
+            console.log(formData);
             const response = await fetch('https://studapi.teachmeskills.by/auth/jwt/create/', {
                 method: "POST",
                 body: JSON.stringify(formData),
@@ -14,7 +16,6 @@ export const tokens: any  = createAsyncThunk (
                 },
             });
             const tokens = await response.json();
-            // console.log(tokens);
             
             
             if (response.ok) {

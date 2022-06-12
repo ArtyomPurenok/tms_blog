@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from "react";
-import './SignInCenterDiv.scss';
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import jwtDecode, { JwtPayload } from 'jwt-decode'
+import React, { useEffect, useState } from "react"
+import './SignInCenterDiv.scss'
+import { useDispatch, useSelector } from "react-redux"
+import { useNavigate } from "react-router-dom"
 
-import {PageTittle} from "../../../components/PageTittle";
-import { Input } from "../../../components/Input";
-import { Button } from "../../../components/Button";
-import { tokens } from "../../../thunkAction/Tokens";
-import { signInFetch } from "../../../thunkAction/signInFetch";
-// import { customFetch } from "../../../thunkAction/CustomFetch";    временно отключена (не удалять)
+import {PageTittle} from "../../../components/PageTittle"
+import { Input } from "../../../components/Input"
+import { Button } from "../../../components/Button"
+import { tokens } from "../../../thunkAction/Tokens"
+import { customFetch } from "../../../thunkAction/CustomFeatch"
+import { userFeatch } from "../../../thunkAction/UserFeatch"
 
 
 
 export const SignInCenterDiv = () => {
+    // const dataUser = useSelector((state: any) => state.user.asd);
     const dataTokens = useSelector((state: any) => state.tokens);
-    const dataSignIn = useSelector((state: any) => state.signIn);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     
@@ -32,22 +31,21 @@ export const SignInCenterDiv = () => {
     const sumbutForm = (event: any) => {
         event.preventDefault();
         const formData = {email,password};
-        dispatch(tokens(formData));
-        console.log(formData);
+   
+        dispatch(tokens(formData))
+        .then((data: any) => {dispatch(customFetch(data.payload))})
+        .then( dispatch(userFeatch(dataTokens.tokens.access)))
       }
 
-      useEffect(() => {    
-          if (dataTokens.access) {            
-            dispatch(signInFetch(dataTokens.access))
-          }
 
-      }, [dataTokens.access])
 
-      useEffect(() => {
-          if (dataSignIn.userName) {
-            navigate('/')
+      useEffect(() => {      
+          if (dataTokens.user.userName) {
+              alert('Are you registered')
+            navigate('/main')
           }
-      }, [dataSignIn.userName])
+      }, [])
+
 
     return <div className="signIn-center-box">
 

@@ -1,12 +1,12 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { postRequest } from "../../thunkAction/postRequest";
 
-export type TypeTabs = {
+export type TypePost = {
     post: any
     isLoading: boolean
 }
 
-const initialState: TypeTabs = {
+const initialState: TypePost = {
     post: null,
     isLoading: false
 }

@@ -6,14 +6,17 @@ import reportWebVitals from './reportWebVitals'
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Provider } from "react-redux"
-import { store } from "./redux/store"
+import { store, persistor } from "./redux/store"
+import { PersistGate } from 'redux-persist/integration/react'
 
+import { AstronautsMainPage } from './Pages/AstronautsMainPage'
 import {AstronautsMainTwoPage} from './Pages/AstronautsMainTwoPage'
 import {SignIn} from './Pages/SignIn'
 import {SignUp} from './Pages/SignUp'
 import {SinglePage} from './Pages/SinglePage'
 import {Verify} from './Pages/Verify'
-
+import { ResetPassword } from './Pages/ResetPassword'
+import { NewPasswordPage } from './Pages/ResetPassword/NewPasswordPage'
 
 
 const root = ReactDOM.createRoot(
@@ -21,15 +24,20 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App/>}/>
-      <Route path='/secondPage' element={<AstronautsMainTwoPage/>}/>
-      <Route path='/signIn' element={<SignIn/>}/>
-      <Route path='/signUp' element={<SignUp/>}/>
-      <Route path='/verify' element={<Verify/>}/>
-      <Route path='/posts/:id' element={<SinglePage/>}/>
+      <Route path='/' element={<App/>}>
+        <Route path='/main' element={<AstronautsMainPage/>}/>
+        <Route path='/secondPage' element={<AstronautsMainTwoPage/>}/>
+        <Route path='/signIn' element={<SignIn/>}/>
+        <Route path='/signUp' element={<SignUp/>}/>
+        <Route path='/verify' element={<Verify/>}/>
+        <Route path='/resetPassword' element={<ResetPassword/>}/>
+        <Route path='/newPassword' element={<NewPasswordPage/>}/>
+        <Route path='/posts/:id' element={<SinglePage/>}/>
+      </Route>
       <Route
       path='*'
       element={
@@ -40,6 +48,7 @@ root.render(
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
+  </PersistGate>
   </Provider>
 );
 

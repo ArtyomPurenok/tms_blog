@@ -82,9 +82,7 @@ export const AstronautsMainTwoPage = () => {
 
     return <div className="astronauts-main-two-page">
         <DataServer.Provider value={AstronautsTwoDataServer}>
-        <Header/>
         <AstronautsTwoAllCardBox/>
-        <Footer/>
         </DataServer.Provider>
     </div>
 }

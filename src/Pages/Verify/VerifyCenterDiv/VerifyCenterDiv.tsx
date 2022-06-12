@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import {PageTittle} from "../../../components/PageTittle"
 import { Input } from "../../../components/Input"
 import { Button } from "../../../components/Button"
-import { verify } from "../../../thunkAction/Verify";
+import { verify } from "../../../thunkAction/VerifyFeatch";
 import { useNavigate } from "react-router-dom"
 
 

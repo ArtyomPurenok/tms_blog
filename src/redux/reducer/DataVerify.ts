@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import { verify } from "../../thunkAction/Verify";
+import { verify } from "../../thunkAction/VerifyFeatch";
 
 export type TypeVerify = {
     dataVerify: any

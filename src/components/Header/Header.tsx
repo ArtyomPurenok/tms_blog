@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Header.scss'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 import { ReactComponent as MenuIcon } from '../../components/Icons/MenuIcon.svg'
@@ -45,15 +45,16 @@ export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
 
     //User
     const [user, setUser] = useState('not');
-    const dataSignIn = useSelector((state: any) => state.signIn);
+    const userData = useSelector((state: any) => state.tokens.user);
     const navigate = useNavigate();
     
 
-    useEffect(() => {
-        if (dataSignIn.userName != null) {           
+    useEffect(() => {        
+        if (userData.userName != null) {           
             setUser('ok')
         }else {setUser('not')}
-    }, [dataSignIn.userName])
+    }, [userData.userName])
+
 
     const registerUser = () => {navigate('/signIn')}
 
@@ -66,7 +67,7 @@ export const Header = ({headerUser, headerUserIcon}: HeaderProps) => {
 
             <div className='header__right'>
                 <Button className={'header__btn-seach'} Icon={SearchIcon}/>
-                {user == 'ok' && <ButtonUser userName={dataSignIn.userName} className='header__btn-user'/>}
+                {user == 'ok' && <ButtonUser userName={userData.userName} className='header__btn-user'/>}
                 {user == 'not' && <Button className={'header__user-icon'} Icon={UserIcon} onClick={registerUser}/>}
             </div>
         </div>

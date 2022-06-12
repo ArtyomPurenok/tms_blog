@@ -4,9 +4,6 @@ import { useParams } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux"
 
 import {postRequest} from '../../thunkAction/postRequest'
-import { Header } from "../../components/Header"
-import { Footer } from "../../components/Footer"
-
 
 
 export const SinglePage = () => {
@@ -25,8 +22,6 @@ export const SinglePage = () => {
 
 
     return <div className="single-page">
-        <Header/>
-
         <div className="single-page__center">
             <div className="single-page__link-home">
                 <p>Home</p>
@@ -43,8 +38,6 @@ export const SinglePage = () => {
                 <p>{post?.post?.text}</p>
             </div>
         </div>
-
-        <Footer/>
     </div>
 
 }

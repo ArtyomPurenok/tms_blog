@@ -8,22 +8,24 @@ import { useSelector } from "react-redux";
 
 export const NavDiv = () => {
     const [user, setUser] = useState('');
-    const dataSignIn = useSelector((state: any) => state.signIn);
+    const userData = useSelector((state: any) => state.tokens.user);
 
 
     useEffect(() => {
-        if (dataSignIn.userName != null) {           
+        if (userData.userName != null) {           
             setUser('ok')
         }else {setUser('')}
-    }, [dataSignIn.userName])
+    }, [userData.userName])
 
     
     return <div>
-        {user && <ButtonUser userName={dataSignIn.userName} className='nav-div__btn-user'/>}
-        <ButtonForNav txt='Home' route='/'/>
-        <ButtonForNav txt='Two Main' route='/secondPage'/>
+        {user && <ButtonUser userName={userData.userName} className='nav-div__btn-user'/>}
+        <ButtonForNav txt='Home' route='/main'/>
         <ButtonForNav txt='SignIn' route='/signIn'/>
         <ButtonForNav txt='SignUp' route='/signUp'/>
         <ButtonForNav txt='Verify' route='/verify'/>
+        <ButtonForNav txt='Reset Password' route='/resetPassword'/>
+        <ButtonForNav txt='New Password' route='/newPassword'/>
+        <ButtonForNav txt='Add post' route='/newPassword'/>
     </div>
 }

@@ -43,8 +43,6 @@ export const SignUpCenterBox = () => {
         event.preventDefault()
         const formData = {username, email, password}
         dispatch(signUp(formData))
-        // console.log(formData)
-        console.log(dataSignUp)
       }
 
 
