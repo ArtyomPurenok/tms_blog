@@ -31,7 +31,7 @@ export const VerifyCenterDiv = () => {
         }
     }, [dataSignUp])
 
-    const  verifyForm = (event: any) => {
+    const  submitForm = (event: any) => {
         event.preventDefault()
         const verifyData = {uid, token}
         dispatch(verify(verifyData))
@@ -43,11 +43,11 @@ export const VerifyCenterDiv = () => {
 
         <div className="verify-center-div__inputs--btn">
 
-            <form action="">
-            <div className="verify-center-div__input-box">
+            <form action="" className="verify-center-div__input-box">
+            <div>
                 <Input onChange={onUidChange} inputName='uid' placeholder='uid' className='verify-center-div__input-uid' generalDiv='verify-center-div__uid-div'/>
                 <Input onChange={onTokenChange} inputName='token' placeholder='token' className='verify-center-div__input-token' generalDiv='verify-center-div__token-div'/>
-                <Button onClick={verifyForm} className="verify-center-div__btn" txt='Verify'/>
+                <Button onClick={submitForm} className="verify-center-div__btn" txt='Verify'/>
             </div>
             </form>
 

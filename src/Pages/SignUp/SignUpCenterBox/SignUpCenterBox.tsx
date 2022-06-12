@@ -33,13 +33,13 @@ export const SignUpCenterBox = () => {
     }
 
     useEffect(() => {
-        if (dataSignUp.dataSignUp != null) {
+        if (dataSignUp.dataSignUp) {
             navigate('/verify')
         }
     })
 
 
-    const sumbutForm = (event: any) => {
+    const submitForm  = (event: any) => {
         event.preventDefault()
         const formData = {username, email, password}
         dispatch(signUp(formData))
@@ -62,7 +62,7 @@ export const SignUpCenterBox = () => {
                 </div>
 
                 <div className="signUp-center-box__btn--box">
-                    <Button onClick={sumbutForm} className="signUp-center-box__btn" txt='Sign Up'/>
+                    <Button onClick={submitForm } className="signUp-center-box__btn" txt='Sign Up'/>
                     <p className="signUp-center-box__btn--txt">Already have an account? <a href="/signIn" className="signUp-center-box__btn--span">Sign In</a></p>
                 </div>
                 </form>
