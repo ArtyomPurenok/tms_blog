@@ -1,4 +1,8 @@
-.bookmark__btn {
+.bookmark {
     background-color: transparent;
     border-color: transparent;
+
+    &__true path {
+        fill: blue;
+    }
 }

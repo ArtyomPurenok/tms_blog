@@ -2,8 +2,8 @@ import React from "react";
 import './AstronautsMainTwoPage.scss';
 
 import {AstronautsTwoAllCardBox} from './AstronautsTwoAllCardBox';
-import {Header} from '../../Header';
-import {Footer} from '../../Footer';
+import {Header} from '../../components/Header';
+import {Footer} from '../../components/Footer';
 
 
 type DateServer = {
@@ -82,9 +82,7 @@ export const AstronautsMainTwoPage = () => {
 
     return <div className="astronauts-main-two-page">
         <DataServer.Provider value={AstronautsTwoDataServer}>
-        <Header/>
         <AstronautsTwoAllCardBox/>
-        <Footer/>
         </DataServer.Provider>
     </div>
 }

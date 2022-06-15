@@ -1,4 +1,11 @@
+@import '../../Style/Style';
+
 .astronauts-main-page {
     width: 100%;
     margin: 0 auto;
+
+    &__center-div {
+        width: $stGeneralDiv;
+        margin: 0 auto;
+    }
 }

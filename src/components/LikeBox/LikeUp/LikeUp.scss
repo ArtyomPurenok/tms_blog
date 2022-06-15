@@ -1,6 +1,10 @@
-.likeUp__btn {
+.likeUp {
     background-color: transparent;
     border-color: transparent;
     margin-right: 10px;
     font-size: 20px;
+
+    &__true path {
+        fill: green;
+    }
 }

@@ -6,13 +6,14 @@ import {Button} from '../../Button'
 import { ReactComponent as LikeUpIcon } from '../../Icons/LikeUpIcon.svg'
 
 type LikeUpProps = {
-    functionLikeNumber?: any
-    likeNumber: number
+    likeNumber?: number
+    onClick?: any
+    active?: boolean
 }
 
-export const LikeUp = ({functionLikeNumber, likeNumber}: LikeUpProps) => {
+export const LikeUp = ({onClick, likeNumber, active}: LikeUpProps) => {
 
     return <div>
-        <Button onClick={functionLikeNumber} Icon={LikeUpIcon} txt={likeNumber} className='likeUp__btn'/>
+        <Button onClick={onClick} Icon={LikeUpIcon} txt={likeNumber} className={`likeUp likeUp__${active}`}/>
     </div>
 }
