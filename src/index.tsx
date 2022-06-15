@@ -17,6 +17,7 @@ import {SinglePage} from './Pages/SinglePage'
 import {Verify} from './Pages/Verify'
 import { ResetPassword } from './Pages/ResetPassword'
 import { NewPasswordPage } from './Pages/ResetPassword/NewPasswordPage'
+import { AddPostPage } from './Pages/AddPost'
 
 
 const root = ReactDOM.createRoot(
@@ -36,6 +37,7 @@ root.render(
         <Route path='/verify' element={<Verify/>}/>
         <Route path='/resetPassword' element={<ResetPassword/>}/>
         <Route path='/newPassword' element={<NewPasswordPage/>}/>
+        <Route path='/addPost' element={<AddPostPage/>}/>
         <Route path='/posts/:id' element={<SinglePage/>}/>
       </Route>
       <Route

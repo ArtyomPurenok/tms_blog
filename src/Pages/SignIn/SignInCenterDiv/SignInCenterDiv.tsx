@@ -39,12 +39,12 @@ export const SignInCenterDiv = () => {
 
 
 
-      useEffect(() => {      
-          if (dataTokens.user.userName) {
-              alert('Are you registered')
-            navigate('/main')
-          }
-      }, [])
+    //   useEffect(() => {      
+    //       if (dataTokens.user.userName) {
+    //           alert('Are you registered')
+    //         navigate('/main')
+    //       }
+    //   }, [])
 
 
     return <div className="signIn-center-box">

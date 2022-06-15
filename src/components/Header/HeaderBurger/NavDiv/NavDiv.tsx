@@ -26,6 +26,6 @@ export const NavDiv = () => {
         <ButtonForNav txt='Verify' route='/verify'/>
         <ButtonForNav txt='Reset Password' route='/resetPassword'/>
         <ButtonForNav txt='New Password' route='/newPassword'/>
-        <ButtonForNav txt='Add post' route='/newPassword'/>
+        <ButtonForNav txt='Add post' route='/addPost'/>
     </div>
 }
